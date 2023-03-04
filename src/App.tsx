@@ -1,4 +1,6 @@
+import { CoffeeCard } from "./components/CoffeeCard";
 import { Header } from "./components/Header";
+
 import "./styles/global.css";
 
 function App() {
@@ -11,8 +13,8 @@ function App() {
       <Header />
       <h1 className="text-black text-6xl font-bold p-24">Isadora Bayma</h1>
       <div className="bg-yellow-100 h-90 w-90 p-24">
-        <div className="bg-blue-400 h-15 w-15"></div>
       </div>
+      <CoffeeCard />
     </div>
   );
 }
