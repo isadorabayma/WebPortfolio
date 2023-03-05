@@ -1,4 +1,5 @@
 import { CoffeeCard } from "./components/CoffeeCard";
+import { Cv } from "./components/Cv";
 import { Header } from "./components/Header";
 
 import "./styles/global.css";
@@ -11,9 +12,11 @@ function App() {
         className="h-full w-full object-cover absolute mix-blend-soft-light"
       />
       <Header />
-      <h1 className="text-black text-6xl font-bold p-24">Isadora Bayma</h1>
-      <div className="bg-yellow-100 h-90 w-90 p-24"></div>
-      <CoffeeCard />
+      <div className="h-full w-full grid grid-cols-3 absolute">
+        <div></div>
+        <Cv />
+        <CoffeeCard />
+      </div>
     </div>
   );
 }
