@@ -12,10 +12,13 @@ function App() {
         className="h-full w-full object-cover absolute mix-blend-soft-light"
       />
       <Header />
-      <div className="h-full w-full grid grid-cols-3 absolute">
-        <div></div>
-        <Cv />
-        <CoffeeCard />
+      <div className="w-full grid grid-cols-2">
+        <div>
+          <Cv />
+        </div>
+        <div>
+          <CoffeeCard />
+        </div>
       </div>
     </div>
   );
