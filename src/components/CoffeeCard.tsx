@@ -4,9 +4,9 @@ import { EnvelopeOpen, GithubLogo, LinkedinLogo } from "phosphor-react";
 
 export function CoffeeCard() {
   return (
-    <div className="place-items-end ">
-      <div className="pt-96 pr-60 flex">
-        <div className="pt-32 pr-20 absolute">
+    <div>
+      <div className="pt-1 pr-1 flex justify-end">
+        <div className="pt-32 pr-[60px] absolute">
           <div className="bg-teal-900 h-28 w-[33rem] hover:w-[55rem] rounded-lg place-self-end pt-6 pl-8 flex flex-row space-x-6">
             <div>
               <h1 className="text-4xl text-white">Isadora Bayma</h1>
