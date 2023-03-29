@@ -2,13 +2,13 @@ import Perfil from "../Images/perfil.jpg"
 
 interface CvProps {
   rotate: String
-  top: Number
+  z: Number
   color: String
 }
 
 export function Cv(props: CvProps ) {
   return (
-    <div className={`absolute top-${props.top} drop-shadow-xl hover:drop-shadow-2xl w-2/3 h-[55rem] m-16 ${props.rotate} ring-1 ring-gray-900/5 bg-stone-200`}>
+    <div className={`transition-all ease-in delay-150 duration-1000 absolute top-0 z-${props.z} drop-shadow-xl hover:drop-shadow-2xl w-2/3 h-[50rem] m-16  hover:ml-40 ${props.rotate} hover:rotate-0 hover:m-4 ring-1 ring-gray-900/5 ${props.color} hover:z-10`}>
       {/* <img
         src="https://cdn.pixabay.com/photo/2016/11/08/03/16/seamless-1807376_960_720.jpg"
         className="h-5/6 object-cover absolute mix-blend-soft-light"
