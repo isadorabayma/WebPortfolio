@@ -9,7 +9,7 @@ interface CvProps {
 export function Cv(props: CvProps) {
   return (
     <div
-      className={`transition-all ease-in delay-150 duration-1000 absolute top-0 right-12 z-${props.z} drop-shadow-xl hover:drop-shadow-2xl w-[35rem] h-[50rem] m-16  hover:-right-[19rem] ${props.rotate} hover:rotate-0 hover:m-4 ring-1 ring-gray-900/5 ${props.color} hover:z-30`}
+      className={`transition-all ease-in delay-150 duration-1000 absolute top-0 right-12 2xl:left-10 z-${props.z} drop-shadow-xl hover:drop-shadow-2xl w-[35rem] h-[50rem] m-16  hover:-right-[19rem] ${props.rotate} hover:rotate-0 hover:m-4 ring-1 ring-gray-900/5 ${props.color} hover:z-30`}
     >
       {/* <img
         src="https://cdn.pixabay.com/photo/2016/11/08/03/16/seamless-1807376_960_720.jpg"
