@@ -9,7 +9,7 @@ import "./styles/global.css";
 
 function App() {
   return (
-    <div className="bg-slate-400 h-screen relative before:absolute before:h-screen before:w-full before:bg-[url('https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_960_720.jpg')] before:mix-blend-soft-light">
+    <div className="bg-slate-400 h-screen relative before:absolute before:h-screen before:w-full before:bg-[url('/Images/concrete.jpg')] before:mix-blend-soft-light">
       <Header />
       <div className="w-full grid grid-cols-2">
         <div className="relative">
@@ -18,7 +18,7 @@ function App() {
           className="w-2/3 h-[50rem] mt-16 object-cover absolute ring-2 ring-gray-900/5 z-10 drop-shadow-2xl rounded-md"
           /> */}
           <div className="absolute top-16 right-36 2xl:left-10
-           bg-[url('https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_960_720.jpg')] w-[35rem] h-[50rem] object-cover ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-md"></div>
+           bg-[url('/Images/concrete.jpg')] w-[35rem] h-[50rem] object-cover ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-md"></div>
           <Cv color={"bg-stone-200"} z={1} rotate={"-rotate-2"} />
           <Skills color={"bg-stone-200"} z={3} rotate={"-rotate-3"} />
           <Cv color={"bg-stone-200"} z={2} rotate={"rotate-3"} />
