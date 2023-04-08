@@ -1,10 +1,4 @@
-interface CvProps {
-  rotate: String;
-  z: Number;
-  color: String;
-}
-
-export function Skills(props: CvProps) {
+export function Skills() {
   const skills = [
     "React",
     "Html",
@@ -17,9 +11,6 @@ export function Skills(props: CvProps) {
     "JavaScript",
   ];
   return (
-    <div
-    className={`transition-all ease-in delay-150 duration-1000 absolute top-0 right-12 2xl:left-10 z-${props.z} drop-shadow-xl hover:drop-shadow-2xl w-[35rem] h-[50rem] m-16  hover:-right-[19rem] ${props.rotate} hover:rotate-0 hover:m-4 ring-1 ring-gray-900/5 ${props.color} hover:z-30`}
-  >
       <div className="p-10 w-4/6">
         <p className="p-10 text-2xl m-auto">Skills</p>
         <ul>
@@ -30,6 +21,5 @@ export function Skills(props: CvProps) {
           })}
         </ul>
       </div>
-    </div>
   );
 }
