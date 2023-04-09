@@ -13,11 +13,15 @@ export function Sheet(props: SheetProps) {
   const marginLabel = 40 - Number(props.z) * 8 
   const margin = `mt-[${marginLabel}rem]`
   console.log(margin);
+
+  function handleClick() {
+    // escrever aqui uma função para colocar um novo css na folha
+  };
   
   return (
     <>
       <div
-        className={`transition-all ease-in delay-150 duration-1000 absolute right-12 2xl:left-10 z-${props.z} hover:-right-[19rem] ${props.rotate} hover:rotate-0 m-16 hover:m-4 hover:z-30 flex flex-row drop-shadow-xl hover:drop-shadow-2xl`}
+        className={`transition-all ease-in delay-150 duration-1000 absolute right-12 2xl:left-10 z-${props.z} hover:-right-[19rem] ${props.rotate} hover:rotate-0 m-16 hover:m-4 hover:z-30 flex flex-row drop-shadow-xl hover:drop-shadow-2xl`} // mudar esse css
       >
         <div className="bg-stone-200 ring-1 ring-gray-900/10 w-[35rem] h-[50rem] ">
           <div>
@@ -26,11 +30,12 @@ export function Sheet(props: SheetProps) {
             {"Experience" === props.content && <Experience/>}
           </div>
         </div>
-        <div className={`bg-stone-200 h-32 w-10 ${props.margin} rounded-r-md`}>
-          <div className="-rotate-90 mt-20 border-t-4 border-gray-900">
+        <button onClick={handleClick} className={`bg-stone-200 h-32 w-10 ${props.margin} rounded-r-md`}>
+          <div className="-rotate-90 mt-14 border-t-4 border-gray-900">
             { props.content }
+            {/* colocar a borda só depois de clicar */}
           </div>
-        </div>
+        </button>
       </div>
     </>
   );
