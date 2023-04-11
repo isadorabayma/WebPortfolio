@@ -21,13 +21,16 @@ export function Sheet(props: SheetProps) {
   return (
     <>
       <div
-        className={`transition-all ease-in delay-150 duration-1000 absolute -right-[19rem] 2xl:left-10 ${props.z} hover:-right-12 ${props.rotate} hover:rotate-0 m-16 hover:m-4 hover:z-30 flex flex-row drop-shadow-xl hover:drop-shadow-2xl`} // mudar esse css
+        className={`transition-all ease-in delay-150 duration-1000 absolute right-12 2xl:left-10 ${props.z} hover:-right-[19rem] ${props.rotate} hover:rotate-0 m-16 hover:m-4 hover:z-30 flex flex-row drop-shadow-xl hover:drop-shadow-2xl`} // mudar esse css
       >
         <div className="bg-stone-200 ring-1 ring-gray-900/10 w-[35rem] h-[50rem] ">
-          <div>
-            {"About" === props.content && <About/>}
-            {"Skills" === props.content && <Skills/>}
-            {"Experience" === props.content && <Experience/>}
+          <div className="h-[43rem]">
+            <h1 className="text-5xl text-stone-800 mt-10 mx-10 font-serif font-semibold">{props.content}</h1>
+            <div className="h-full border-y-2 border-stone-800 mx-10">
+              {"About" === props.content && <About/>}
+              {"Skills" === props.content && <Skills/>}
+              {"Experience" === props.content && <Experience/>}
+            </div>
           </div>
         </div>
         <button onClick={handleClick} className={`bg-stone-200 h-32 w-6 ${props.margin} rounded-r-md`}>
