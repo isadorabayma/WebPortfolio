@@ -14,9 +14,9 @@ function App() {
         <div className="relative">
           <div className="absolute top-16 right-44 2xl:left-10 
            bg-stone-700 w-[35rem] h-[50rem] object-cover ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-md"></div>
-          <Sheet margin={"mt-[20rem]"} z={1} content={"About"} rotate={"-rotate-3"} />
-          <Sheet margin={"mt-[28rem]"} z={3} content={"Skills"} rotate={"-rotate-2"} />
-          <Sheet margin={"mt-[36rem]"} z={2} content={"Experience"} rotate={"rotate-1"} />
+          <Sheet margin={"mt-[20rem]"} z={"z-5"} content={"About"} rotate={"-rotate-3"} />
+          <Sheet margin={"mt-[28rem]"} z={"z-3"} content={"Skills"} rotate={"-rotate-2"} />
+          <Sheet margin={"mt-[36rem]"} z={"z-2"} content={"Experience"} rotate={"rotate-1"} />
         </div>
         <div className="relative">
           <Tablet />
