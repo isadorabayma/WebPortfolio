@@ -21,7 +21,7 @@ export function Sheet(props: SheetProps) {
   return (
     <>
       <div
-        className={`transition-all ease-in delay-150 duration-1000 absolute right-12 2xl:left-10 ${props.z} hover:-right-[19rem] ${props.rotate} hover:rotate-0 m-16 hover:m-4 hover:z-30 flex flex-row drop-shadow-xl hover:drop-shadow-2xl`} // mudar esse css
+        className={`transition-all ease-in delay-150 duration-1000 absolute -right-[19rem] 2xl:left-10 ${props.z} hover:-right-12 ${props.rotate} hover:rotate-0 m-16 hover:m-4 hover:z-30 flex flex-row drop-shadow-xl hover:drop-shadow-2xl`} // mudar esse css
       >
         <div className="bg-stone-200 ring-1 ring-gray-900/10 w-[35rem] h-[50rem] ">
           <div>
