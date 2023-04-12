@@ -5,8 +5,8 @@ import { hardSkills } from '../skillsInfo';
 
 export function Skills() {
   return (
-      <div className="pt-10">
-        <h2 className="text-3xl font-serif font-semibold">HardSkils</h2>
+      <div className="pt-5">
+        <h2 className="text-3xl font-serif font-semibold pl-4">HardSkils</h2>
         <div className="flex flex-wrap border-l-2 border-stone-800 ml-5 pl-4">
           {hardSkills.map(([Icon, Name]: SkillType) => (
             <div
