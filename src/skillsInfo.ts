@@ -3,11 +3,10 @@ import { IoLogoJavascript } from 'react-icons/io';
 import {
   SiJest,
   SiRedux,
-  SiTestinglibrary,
+  // SiTestinglibrary,
   SiTypescript,
   SiPython,
   SiTailwindcss,
-  // SiStyledcomponents,
 } from 'react-icons/si';
 import { AiFillHtml5, AiOutlineGithub } from 'react-icons/ai';
 import { DiCss3, DiSass, DiMongodb } from 'react-icons/di';
@@ -25,13 +24,13 @@ const hardSkills: SkillType[] = [
   [SiTypescript, 'Typescript'],
   [SiPython, 'Python'],
   [AiFillHtml5, 'HTML 5'],
+  [FaReact, 'React'],
+  [SiRedux, 'Redux'],
   [DiCss3, 'CSS 3'],
   [DiSass, 'Sass'],
   [SiTailwindcss, 'Tailwindcss'],
+  // [SiTestinglibrary, 'RTL'],
   [SiJest, 'Jest'],
-  [FaReact, 'React'],
-  [SiRedux, 'Redux'],
-  [SiTestinglibrary, 'RTL'],
   [FaNodeJs, 'Node.js'],
   [GrMysql, 'MySQL'],
   [DiMongodb, 'MongoDB'],
