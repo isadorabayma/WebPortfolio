@@ -13,7 +13,7 @@ export function SkillsSection({ skills, title }: SkillsSectionProps) {
           {skills.map(([Icon, Name]: SkillType) => (
             <div
               key={Name}
-              className="pt-5 flex flex-col items-center w-20 " 
+              className="pt-2 mx-1 flex flex-col items-center w-20 " 
             >
               <Icon size={50} />
               <h2 className="pt-1 text-base text-center">{Name}</h2>

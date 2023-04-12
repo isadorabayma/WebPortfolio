@@ -7,6 +7,8 @@ import {
   SiTypescript,
   SiPython,
   SiTailwindcss,
+  SiVercel,
+  SiSupabase,
 } from 'react-icons/si';
 import { AiFillHtml5, AiOutlineGithub } from 'react-icons/ai';
 import { DiCss3, DiSass, DiMongodb } from 'react-icons/di';
@@ -14,6 +16,7 @@ import {
   FaReact,
   FaDocker,
   FaNodeJs,
+  FaTrello,
 } from 'react-icons/fa';
 import { GrMysql } from 'react-icons/gr';
 
@@ -56,6 +59,13 @@ const backEnd: SkillType[] = [
   [GrMysql, 'MySQL'],
   [DiMongodb, 'MongoDB'],
   [FaDocker, 'Docker'],
-  [AiOutlineGithub, 'GitHub'],
 ];
-export { hardSkills, frontEnd, backEnd };
+
+const tools: SkillType[] = [
+  [AiOutlineGithub, 'GitHub'],
+  [FaTrello, 'Trello'],
+  [SiVercel, 'Vercel'],
+  [SiSupabase, 'Supabase'],
+];
+
+export { hardSkills, frontEnd, backEnd, tools };
