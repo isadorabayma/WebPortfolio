@@ -38,4 +38,24 @@ const hardSkills: SkillType[] = [
   [AiOutlineGithub, 'GitHub'],
 ];
 
-export { hardSkills };
+const frontEnd: SkillType[] = [
+  [IoLogoJavascript, 'Javascript'],
+  [SiTypescript, 'Typescript'],
+  [SiPython, 'Python'],
+  [AiFillHtml5, 'HTML 5'],
+  [FaReact, 'React'],
+  [SiRedux, 'Redux'],
+  [DiCss3, 'CSS 3'],
+  [DiSass, 'Sass'],
+  [SiTailwindcss, 'Tailwindcss'],
+  [SiJest, 'Jest'],
+];
+
+const backEnd: SkillType[] = [
+  [FaNodeJs, 'Node.js'],
+  [GrMysql, 'MySQL'],
+  [DiMongodb, 'MongoDB'],
+  [FaDocker, 'Docker'],
+  [AiOutlineGithub, 'GitHub'],
+];
+export { hardSkills, frontEnd, backEnd };

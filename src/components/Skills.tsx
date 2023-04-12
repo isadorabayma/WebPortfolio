@@ -1,23 +1,14 @@
-import { SkillType } from '../skillsInfo';
-import { hardSkills } from '../skillsInfo';
-
-// interface Skills
+import { frontEnd, backEnd } from '../skillsInfo';
+import { SkillsSection } from './SkillsSection';
 
 export function Skills() {
   return (
-      <div className="pt-5">
-        <h2 className="text-3xl font-serif font-semibold pl-4">HardSkils</h2>
-        <div className="flex flex-wrap border-l-2 border-stone-800 ml-5 pl-4">
-          {hardSkills.map(([Icon, Name]: SkillType) => (
-            <div
-              key={Name}
-              className="pt-5 flex flex-col items-center w-20 " 
-            >
-              <Icon size={50} />
-              <h2 className="pt-1 text-base text-center">{Name}</h2>
-            </div>
-          ))}
-        </div>
-      </div>
+    <section id="skills" className="text-stone-800">
+      <SkillsSection skills={frontEnd} title="FrontEnd" />
+      <SkillsSection
+        skills={backEnd}
+        title="BackEnd"
+      />
+    </section>
   );
 }
