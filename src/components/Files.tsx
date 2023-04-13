@@ -3,9 +3,8 @@ import { Tag } from "./Tag";
 
 export function Files() {
   // function handleClick() {
-  //   
-  // alguma coisa vai errado com as tags apartir do 2xl
   // };
+  // alguma coisa vai errado com as tags apartir do 2xl
   const sectionInfo = [
     {
       section: "About",
@@ -43,11 +42,6 @@ export function Files() {
           <Tag margin={margin} z={z} section={section} rotate={rotate} />
         ))}
       </div>
-      {/* <Sheet margin={"mt-[20rem]"} z={"z-3"} section={"About"} rotate={"-rotate-2"} />
-      <Tag margin={"mt-[20rem]"} z={"z-3"} section={"About"} rotate={"-rotate-2"}/>
-
-      <Sheet margin={"mt-[28rem]"} z={"z-30"} section={"Skills"} rotate={"-rotate-1"} />
-      <Sheet margin={"mt-[36rem]"} z={"z-1"} section={"Experience"} rotate={"rotate-1"} /> */}
     </div>
   )
 }
