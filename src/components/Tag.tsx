@@ -11,7 +11,7 @@ export function Tag(props: TagProps) {
     <button 
       id="tag-sheet"
       // onClick={props.handleClick}
-      className={`bg-stone-200 h-32 w-9 ${props.margin} rounded-r-md absolute right-12 ${props.z} ${props.rotate} m-12 border-[1px] border-l-0 border-gray-400 p-3`}
+      className={`bg-stone-200 h-32 w-9 hover:w-[52px] ${props.margin} rounded-r-md absolute right-12 hover:right-8 ${props.z} ${props.rotate} m-12 border-[1px] border-l-0 border-gray-400 p-3 hover:pl-8`}
     >
       <div
         id="label-tag-sheet"
