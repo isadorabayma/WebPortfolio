@@ -28,10 +28,10 @@ export function Files() {
 
   return(
     <div className="relative">
-      {/* <div
+      <div
         id="file-cover"
-        className="absolute top-16 right-36 2xl:left- bg-stone-700 w-[35rem] h-[50rem] object-cover ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-md"
-      ></div> */}
+        className="absolute top-16 right-36 bg-stone-700 w-[35rem] h-[50rem] object-cover ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-md"
+      ></div>
       <div id="sheets">
         {sectionInfo.map(({section, z, rotate, margin})=>(
           <Sheet margin={margin} z={z} section={section} rotate={rotate} />

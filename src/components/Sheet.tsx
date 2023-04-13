@@ -15,7 +15,7 @@ export function Sheet(props: SheetProps) {
   console.log(margin);
   
   return (
-    <div id="sheet" className={`absolute right-12 2xl:left-10 ${props.z} ${props.rotate} m-20 drop-shadow-xl bg-stone-200 ring-1 ring-gray-900/10 w-[35rem] h-[50rem]`}>
+    <div id="sheet" className={`absolute right-12 ${props.z} ${props.rotate} m-20 drop-shadow-xl bg-stone-200 ring-1 ring-gray-900/10 w-[35rem] h-[50rem]`}>
       <div className="h-[43rem]">
         <h1 id="title-sheet-section" className="text-5xl text-stone-800 mt-10 mx-10 font-serif font-semibold">{props.section}</h1>
         <div id="content-sheet-section" className="h-full border-y-2 border-stone-800 mx-10">
