@@ -1,10 +1,14 @@
+import { useState } from "react";
 import { Sheet } from "./Sheet";
 import { Tag } from "./Tag";
 
 export function Files() {
-  // function handleClick() {
-  // };
-  // alguma coisa vai errado com as tags apartir do 2xl
+  const [isSheetHided, setIsSheetHided] = useState(true);
+
+  const handleClick = () => {
+    setIsSheetHided((prevIsSheetHided) => !prevIsSheetHided);
+  };
+  
   const sectionInfo = [
     {
       section: "About",
@@ -39,9 +43,12 @@ export function Files() {
       </div>
       <div id="tags">
         {sectionInfo.map(({section, z, rotate, margin})=>(
-          <Tag margin={margin} z={z} section={section} rotate={rotate} />
+          <Tag handleClick={handleClick} margin={margin} z={z} section={section} rotate={rotate} />
         ))}
       </div>
+      {!isSheetHided && (
+        <div>button is clicked</div>
+      )}
     </div>
   )
 }

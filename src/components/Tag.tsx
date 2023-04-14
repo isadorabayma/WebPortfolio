@@ -1,5 +1,5 @@
 interface TagProps {
-  // handleClick: Function;
+  handleClick: React.MouseEventHandler<HTMLButtonElement>;
   section: String;
   z: string;
   rotate: String;
@@ -10,7 +10,7 @@ export function Tag(props: TagProps) {
   return (
     <button 
       id="tag-sheet"
-      // onClick={props.handleClick}
+      onClick={props.handleClick}
       className={`bg-stone-200 h-32 w-9 hover:w-[52px] ${props.margin} rounded-r-md absolute right-12 hover:right-8 ${props.z} ${props.rotate} m-12 border-[1px] border-l-0 border-gray-400 p-3 hover:pl-8`}
     >
       <div
