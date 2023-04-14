@@ -7,6 +7,7 @@ interface SectionInfo {
   z: string;
   rotate: string;
   margin: string;
+  right: string;
 }
 
 export function Files() {
@@ -16,18 +17,21 @@ export function Files() {
       z: "z-[3]",
       rotate: "-rotate-2",
       margin: "mt-[20rem]",
+      right: "",
     },
     {
       name: "Skills",
       z: "z-[2]",
       rotate: "-rotate-1",
       margin: "mt-[28rem]",
+      right: "",
     },
     {
       name: "Experience",
       z: "z-[1]",
       rotate: "rotate-1",
       margin: "mt-[36rem]",
+      right: "",
     },
   ]
 
@@ -50,10 +54,14 @@ export function Files() {
         if(section.name !== sectionButton || section.name === tagClicked){
           const initialSection = initialSectionInfo.find(obj => obj.name === section.name);
           if(initialSection){
-            newSection.z = initialSection.z
+            newSection.z = initialSection.z;
+            newSection.rotate = initialSection.rotate;
+            newSection.right = initialSection.right;
           } 
         } else {
-          newSection.z = "z-30"      
+          newSection.z = "z-30";     
+          newSection.rotate = "rotate-0";   
+          newSection.right = "-right-[20rem]";   
         }
         return newSection
       })
@@ -67,13 +75,13 @@ export function Files() {
         className="absolute top-16 right-36 bg-stone-700 w-[35rem] h-[50rem] object-cover ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-md"
       ></div>
       <div id="sheets">
-        {sectionInfo.map(({name, z, rotate, margin})=>(
-          <Sheet margin={margin} z={z} name={name} rotate={rotate} />
+        {sectionInfo.map(({name, z, rotate, right})=>(
+          <Sheet right={right} z={z} name={name} rotate={rotate} />
         ))}
       </div>
       <div id="tags">
-        {sectionInfo.map(({name, z, rotate, margin})=>(
-          <Tag handleClick={handleClick} margin={margin} z={z} name={name} rotate={rotate} />
+        {sectionInfo.map(({name, z, rotate, margin, right})=>(
+          <Tag handleClick={handleClick} right={right} margin={margin} z={z} name={name} rotate={rotate} />
         ))}
       </div>
     </div>
