@@ -1,3 +1,4 @@
+import { X } from "phosphor-react";
 import { About } from "./About";
 import { Experience } from "./Experience";
 import { Skills } from "./Skills";
@@ -19,7 +20,10 @@ export function Sheet({name, z, rotate, right, handleClick}: SheetProps) {
           {"About" === name && <About/>}
           {"Skills" === name && <Skills/>}
           {"Experience" === name && <Experience/>}
-          <button onClick={() => handleClick(name)} className="absolute right-1 bottom-2">X</button>
+          <button onClick={() => handleClick(name)} className="absolute right-1 bottom-2">
+            <X size={25} weight="bold"/>
+          </button>
+
         </div>
       </div>
     </div>
