@@ -21,14 +21,14 @@ export function Files() {
     },
     {
       name: "Skills",
-      z: "z-[2]",
+      z: "z-[1]",
       rotate: "-rotate-1",
       margin: "mt-[28rem]",
       right: "",
     },
     {
       name: "Experience",
-      z: "z-[1]",
+      z: "z-[2]",
       rotate: "rotate-1",
       margin: "mt-[36rem]",
       right: "",
@@ -61,7 +61,7 @@ export function Files() {
         } else {
           newSection.z = "z-30";     
           newSection.rotate = "rotate-0";   
-          newSection.right = "-right-[20rem]";   
+          newSection.right = "-right-[22.5rem]";   
         }
         return newSection
       })
@@ -72,11 +72,11 @@ export function Files() {
     <div className="relative">
       <div
         id="file-cover"
-        className="absolute top-16 right-36 bg-stone-700 w-[35rem] h-[50rem] object-cover ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-md"
+        className="absolute top-16 right-36 bg-stone-700 w-[35rem] h-[50rem] object-cover ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-r-md"
       ></div>
       <div id="sheets">
         {sectionInfo.map(({name, z, rotate, right})=>(
-          <Sheet right={right} z={z} name={name} rotate={rotate} />
+          <Sheet handleClick={handleClick} right={right} z={z} name={name} rotate={rotate} />
         ))}
       </div>
       <div id="tags">
