@@ -61,7 +61,7 @@ export function Files() {
         } else {
           newSection.z = "z-30";     
           newSection.rotate = "rotate-0";   
-          newSection.right = "-right-[360px]";   
+          newSection.right = "-right-[22rem]";   
         }
         return newSection
       })

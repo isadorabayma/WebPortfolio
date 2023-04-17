@@ -7,12 +7,15 @@ interface TagProps {
   right: String;
 }
 
+// hover:${!right && "w-[52px]"} hover:${!right && "right-8"} hover:${!right && "pl-8"}
+// hover:w-[52px] hover:right-8 hover:pl-8
+
 export function Tag({handleClick, margin, z, rotate, name, right}: TagProps) {
   return (
     <button 
       id="tag-sheet"
       onClick={() => handleClick(name)}
-      className={`bg-stone-200 h-32 w-9 hover:${!right && "w-[52px]"} ${margin} rounded-r-md absolute right-12 hover:${!right && "right-8"} ${right} ${z} ${rotate} m-12 border-[1px] border-l-0 border-gray-400 p-3 hover:${!right && "pl-8"}`}
+      className={`absolute bg-stone-200 h-32 w-9 ${margin} rounded-r-md  ${right} right-12 ${z} ${rotate} m-12 border-[1px] border-l-0 border-gray-400 p-3 hover:${!right && "w-[52px]"} hover:${!right && "right-8"} hover:${!right && "pl-8"}`}
     >
       <div
         id="label-tag-sheet"
