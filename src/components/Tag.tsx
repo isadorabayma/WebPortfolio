@@ -15,7 +15,7 @@ export function Tag({handleClick, margin, z, rotate, name, right}: TagProps) {
     <button 
       id="tag-sheet"
       onClick={() => handleClick(name)}
-      className={`absolute bg-stone-200 h-32 w-9 ${margin} rounded-r-md  ${right} right-12 ${z} ${rotate} m-12 border-[1px] border-l-0 border-gray-300 p-3 hover:${!right && "w-[52px]"} hover:${!right && "right-8"} hover:${!right && "pl-8"}`}
+      className={`absolute transition-all ease-in-out duration-1000 bg-stone-200 h-32 w-9 ${margin} rounded-r-md  ${right} right-12 ${z} ${rotate} m-12 border-[1px] border-l-0 border-gray-300 p-3 hover:${!right && "w-[52px]"} hover:${!right && "right-8"} hover:${!right && "pl-8"}`}
     >
       <div
         id="label-tag-sheet"
