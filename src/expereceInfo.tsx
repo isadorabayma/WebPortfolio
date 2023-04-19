@@ -6,7 +6,7 @@ export type ExperienceType = {
   category: String;
 }
 
-const experience: ExperienceType[] = [
+const experiences: ExperienceType[] = [
   {
     name: "Graduação",
     startYear: 2010,
@@ -60,4 +60,4 @@ const experience: ExperienceType[] = [
   }
 ];
 
-export { experience };
+export { experiences };
