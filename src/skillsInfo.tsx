@@ -22,25 +22,6 @@ import { GrMysql } from 'react-icons/gr';
 
 export type SkillType = [IconType, string];
 
-const hardSkills: SkillType[] = [
-  [IoLogoJavascript, 'Javascript'],
-  [SiTypescript, 'Typescript'],
-  [SiPython, 'Python'],
-  [AiFillHtml5, 'HTML 5'],
-  [FaReact, 'React'],
-  [SiRedux, 'Redux'],
-  [DiCss3, 'CSS 3'],
-  [DiSass, 'Sass'],
-  [SiTailwindcss, 'Tailwindcss'],
-  // [SiTestinglibrary, 'RTL'],
-  [SiJest, 'Jest'],
-  [FaNodeJs, 'Node.js'],
-  [GrMysql, 'MySQL'],
-  [DiMongodb, 'MongoDB'],
-  [FaDocker, 'Docker'],
-  [AiOutlineGithub, 'GitHub'],
-];
-
 const frontEnd: SkillType[] = [
   [IoLogoJavascript, 'Javascript'],
   [SiTypescript, 'Typescript'],
@@ -68,4 +49,4 @@ const tools: SkillType[] = [
   [SiSupabase, 'Supabase'],
 ];
 
-export { hardSkills, frontEnd, backEnd, tools };
+export { frontEnd, backEnd, tools };
