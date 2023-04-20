@@ -3,21 +3,20 @@ import { ExperienceType } from "../expereceInfo";
 interface ExpSectionProps {
   direction: String;
   data: ExperienceType[]
-  bottomSize: (year:Number) => String
+  height: (year:ExperienceType) => String
 }
 
-export function ExpSection({ direction, data, bottomSize }: ExpSectionProps) {
+export function ExpSection({ direction, data, height }: ExpSectionProps) {
   const directionFull = direction === "l" ? "text-left" : "text-right";
     
   return(
-    <div className={`border-stone-800 border-${direction}-2 w-1/2 h-[38rem] relative`}>
-      {data.map((exp)=>(
-        <div className={`absolute px-5 ${bottomSize(exp.endYear)}`}>
-        {/* // <div className={`absolute px-5 bottom-[14rem]`}> */}
+    <div className={`border-stone-800 border-${direction}-2 w-1/2 h-[38rem] flex flex-col`}>
+      {data.map((exp) => (
+        <div className={`px-5 h-[${height(exp)}]`}>
           <div className={directionFull}>{exp.name}</div>
           <div className={directionFull}>{`${exp.startYear} - ${exp.endYear}`}</div>
-        </div>
-      ))}
+        </div>)
+      )}
     </div>
   );
 }
