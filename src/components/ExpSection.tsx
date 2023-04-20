@@ -1,4 +1,5 @@
 import { ExperienceType } from "../expereceInfo";
+import { experiences } from "../expereceInfo";
 
 interface ExpSectionProps {
   direction: String;
@@ -9,14 +10,22 @@ interface ExpSectionProps {
 
 export function ExpSection({ direction, data, yearsSize, expLength }: ExpSectionProps) {
   const directionFull = direction === "l" ? "text-left" : "text-right";
-  const hightSize = 38 / Number(yearsSize)
+  const hightSize = `h-[${Math. floor(38 / Number(expLength))}rem]`;
+  const expSort = experiences.sort((a, b) => Number(b.endYear) - Number(a.endYear));
+  
 
   return(
     <div className={`border-stone-800 border-${direction}-2 w-1/2 h-[38rem]`}>
-      {data.map((exp)=>(
-        <div className={`p-5 h-[${hightSize}rem]`}>
-          <div className={`${directionFull}`}>{exp.name}</div>
-          <div className={`${directionFull}`}>{`${exp.startYear} - ${exp.endYear}`}</div>
+      {expSort.map((exp)=>(
+        exp.category === "Formação" ?
+        <div className="px-5 h-[5rem]">
+          <div className={"text-left"}>{exp.name}</div>
+          <div className={"text-left"}>{`${exp.startYear} - ${exp.endYear}`}</div>
+        </div>
+        :
+        <div className="px-5 h-[5rem]">
+          <div className={"text-right"}>{exp.name}</div>
+          <div className={"text-right"}>{`${exp.startYear} - ${exp.endYear}`}</div>
         </div>
       ))}
     </div>
