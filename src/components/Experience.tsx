@@ -12,12 +12,18 @@ export function Experience() {
 
   const yearsSize = Number(lastYear) - Number(firstYear)
 
-  const expLength = experiences.length
+  const hightSize = Math. floor(38 / Number(yearsSize));
+
+  function bottomSize(year: Number) {
+    return(
+      `bottom-[${(Number(year) - Number(firstYear)) * hightSize}rem]`
+    )
+  } 
 
   return(
     <div className="flex flex-row p-5">
-      <ExpSection direction={"r"} data={study} yearsSize={yearsSize} expLength={expLength}/>
-      <ExpSection direction={"l"} data={work} yearsSize={yearsSize} expLength={expLength}/>
+      <ExpSection direction={"r"} data={study} bottomSize={bottomSize}/>
+      <ExpSection direction={"l"} data={work} bottomSize={bottomSize}/>
     </div>
   );
 }
