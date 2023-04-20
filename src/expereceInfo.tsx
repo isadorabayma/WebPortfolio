@@ -24,7 +24,7 @@ const experiences: ExperienceType[] = [
   },
   {
     name: "Programa de Iniciação Cientifica e Mestrado",
-    startYear: 2009,
+    startYear: 2010,
     endYear: 2011,
     description: "Matemática discreta",
     category: "Formação"
