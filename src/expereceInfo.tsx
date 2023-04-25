@@ -4,6 +4,7 @@ export type ExperienceType = {
   endYear: Number;
   description: String;
   category: String;
+  duration: Number,
 }
 
 const experiences: ExperienceType[] = [
@@ -12,14 +13,16 @@ const experiences: ExperienceType[] = [
     startYear: 2010,
     endYear: 2017,
     description: "Arquitetura e Urbanismo",
-    category: "Formação"
+    category: "Formação",
+    duration: 7,
   },
   {
     name: "Intercâmbio Inglaterra",
     startYear: 2013,
     endYear: 2014,
     description: "Arquitetura e Urbanismo",
-    category: "Formação"
+    category: "Formação",
+    duration: 1,
 
   },
   {
@@ -27,7 +30,8 @@ const experiences: ExperienceType[] = [
     startYear: 2010,
     endYear: 2011,
     description: "Matemática discreta",
-    category: "Formação"
+    category: "Formação",
+    duration: 1,
 
   },
   {
@@ -35,28 +39,32 @@ const experiences: ExperienceType[] = [
     startYear: 2021,
     endYear: 2022,
     description: "Desenvolvimento Web Full Stack",
-    category: "Formação"
+    category: "Formação",
+    duration: 1,
   },
   {
     name: "Desevolvedora web - VILA Estúdio",
     startYear: 2022,
     endYear: 2023,
     description: "Desenvolvimento Web Frontend do site da empresa e para um cliente de um site do setor hoteleiro",
-    category: "Experiencia Proficional"
+    category: "Experiencia Proficional",
+    duration: 1,
   },
   {
     name: "Arquiteta - Empresa VILA Estúdio",
     startYear: 2017,
     endYear: 2022,
     description: "Arquiteta e Gerente de Obras",
-    category: "Experiencia Proficional"
+    category: "Experiencia Proficional",
+    duration: 5,
   },
   {
     name: "Estágio de Arquitetura - Inova Urbe",
     startYear: 2016,
     endYear: 2016,
     description: "Escritório de arquitetura social na Rocinha, comunidade no Rio de Janeiro",
-    category: "Experiencia Proficional"
+    category: "Experiencia Proficional",
+    duration: 1,
   }
 ];
 
