@@ -38,7 +38,7 @@ export function Files() {
   const [sectionInfo, setSectionInfo] = useState<SectionInfo[]>(
     [ ...initialSectionInfo ]
   )
-  const [tagClicked, setTagClicked] = useState("")
+  const [tagClicked, setTagClicked] = useState<String | "">("")
 
   const handleClick = (sectionButton: String) => {
     setTagClicked((prevTagClicked) => {
