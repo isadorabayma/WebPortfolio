@@ -6,11 +6,11 @@ export function CoffeeCard() {
   return (
     <div>
       <div className="flex lg:pt-[40rem]">
-        <div className="absolute transition-all ease-in-out duration-700 -left-10 sm:left-10 md:left-24 xl:left-40 hover:-left-[20rem] md:hover:-left-[10rem] pt-8 lg:pt-28 lg:pr-[40px]">
-          <div className="bg-teal-800 h-[9rem] w-[33rem] rounded-md place-self-end pl-8 flex flex-row space-x-6">
+        <div className="absolute transition-all ease-in-out duration-700 -left-16 sm:left-10 md:left-24 xl:left-40 hover:-left-[20rem] md:hover:-left-[10rem] pt-8 lg:pt-28 lg:pr-[40px]">
+          <div className="bg-teal-800 h-[9rem] w-[33rem] rounded-md place-self-end pl-5 sm:pl-8 flex flex-row space-x-6">
             <div className="my-auto flex flex-row space-x-5">
               <div>
-                <h1 className="text-4xl text-white">Isadora Bayma</h1>
+                <h1 className="text-2xl sm:text-4xl text-white">Isadora Bayma</h1>
                 <h2 className="text-gray-300">Desenvolvedora Fullstack</h2>
               </div>
               <h1 className="text-4xl text-white">|</h1>
