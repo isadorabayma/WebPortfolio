@@ -6,7 +6,7 @@ export function Tablet() {
     
     rotate-6 mt-56 
    
-    hover:rotate-0 hover:right-[6rem]
+    hover:rotate-0 hover:-right-[1.5rem]
 
     lg:mt-16 hover:mt-2
     
