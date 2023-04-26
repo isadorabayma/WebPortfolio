@@ -24,8 +24,8 @@ export type SkillType = [IconType, string];
 
 const frontEnd: SkillType[] = [
   [IoLogoJavascript, 'Javascript'],
-  [SiTypescript, 'Typescript'],
   [SiPython, 'Python'],
+  [SiTypescript, 'Typescript'],
   [AiFillHtml5, 'HTML 5'],
   [FaReact, 'React'],
   [SiRedux, 'Redux'],

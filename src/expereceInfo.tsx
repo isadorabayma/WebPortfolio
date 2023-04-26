@@ -1,5 +1,6 @@
 export type ExperienceType = {
   name: String;
+  place: String;
   startYear: Number;
   endYear: Number;
   description: String;
@@ -10,6 +11,7 @@ export type ExperienceType = {
 const experiences: ExperienceType[] = [
   {
     name: "Graduação",
+    place: "PUC-Rio",
     startYear: 2010,
     endYear: 2017,
     description: "Arquitetura e Urbanismo",
@@ -17,7 +19,8 @@ const experiences: ExperienceType[] = [
     duration: 7,
   },
   {
-    name: "Intercâmbio Inglaterra",
+    name: "Intercâmbio",
+    place: "Inglaterra",
     startYear: 2013,
     endYear: 2014,
     description: "Arquitetura e Urbanismo",
@@ -27,6 +30,7 @@ const experiences: ExperienceType[] = [
   },
   {
     name: "Programa de Iniciação Cientifica e Mestrado",
+    place: "IMPA",
     startYear: 2010,
     endYear: 2011,
     description: "Matemática discreta",
@@ -35,7 +39,8 @@ const experiences: ExperienceType[] = [
 
   },
   {
-    name: "Tecnico na Trybe",
+    name: "Tecnico",
+    place: "Trybe",
     startYear: 2021,
     endYear: 2022,
     description: "Desenvolvimento Web Full Stack",
@@ -43,7 +48,8 @@ const experiences: ExperienceType[] = [
     duration: 1,
   },
   {
-    name: "Desevolvedora web - VILA Estúdio",
+    name: "Desevolvedora web",
+    place: "VILA Estúdio",
     startYear: 2022,
     endYear: 2023,
     description: "Desenvolvimento Web Frontend do site da empresa e para um cliente de um site do setor hoteleiro",
@@ -51,7 +57,8 @@ const experiences: ExperienceType[] = [
     duration: 1,
   },
   {
-    name: "Arquiteta - Empresa VILA Estúdio",
+    name: "Arquiteta",
+    place: "VILA Estúdio",
     startYear: 2017,
     endYear: 2022,
     description: "Arquiteta e Gerente de Obras",
@@ -59,7 +66,8 @@ const experiences: ExperienceType[] = [
     duration: 5,
   },
   {
-    name: "Estágio de Arquitetura - Inova Urbe",
+    name: "Estágio",
+    place: "Inova Urbe",
     startYear: 2016,
     endYear: 2016,
     description: "Escritório de arquitetura social na Rocinha, comunidade no Rio de Janeiro",

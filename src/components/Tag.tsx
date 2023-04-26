@@ -7,9 +7,6 @@ interface TagProps {
   right: String;
 }
 
-// hover:${!right && "w-[52px]"} hover:${!right && "right-8"} hover:${!right && "pl-8"}
-// hover:w-[52px] hover:right-8 hover:pl-8
-
 export function Tag({handleClick, margin, z, rotate, name, right}: TagProps) {
   const rightChange = right ? right : "right-12"
 

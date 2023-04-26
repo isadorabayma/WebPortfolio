@@ -18,12 +18,12 @@ export function ExpSection({ direction, data }: ExpSectionProps) {
         const durationHeightB = `h-[${Number(exp.duration) + 2 }rem]`;
         return(
           <div className={`flex ${directionBar} ${durationHeightB}`}>
-            <div className={`w-60`}>
+            <div className={`w-56 sm:w-60`}>
               <div className={directionFull}>{exp.name}</div>
+              <div className={directionFull}>{exp.place}</div>
               <div className={directionFull}>{`${exp.startYear} - ${exp.endYear}`}</div>
             </div>
-            {/* <div className={`border border-r-8 border-cyan-800 ${durationHeight}`}/> */}
-            <div className={`mt-1 mx-2 w-4 rounded-md bg-cyan-800 ${durationHeight}`}/>
+            <div className={`mt-1 mx-1 sm:mx-2 w-2 sm:w-4 rounded-md bg-cyan-800 ${durationHeight}`}/>
           </div>      
         )}
       )}
