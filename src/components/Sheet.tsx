@@ -25,7 +25,6 @@ export function Sheet({name, z, rotate, right, handleClick}: SheetProps) {
           <button onClick={() => handleClick(name)} className="absolute right-20 sm:right-1 bottom-2">
             <X size={25} weight="bold"/>
           </button>
-
         </div>
       </div>
     </div>
