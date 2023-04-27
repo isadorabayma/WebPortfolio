@@ -1,73 +1,8 @@
-import { useState } from "react";
+import { FileProps } from "../filesInfo";
 import { Sheet } from "./Sheet";
 import { Tag } from "./Tag";
 
-interface SectionInfo {
-  name: string;
-  z: string;
-  rotate: string;
-  margin: string;
-  right: string;
-}
-
-export function Files() {
-  const initialSectionInfo = [
-    {
-      name: "About",
-      z: "z-[3]",
-      rotate: "-rotate-2",
-      margin: "mt-[7rem]",
-      right: "",
-    },
-    {
-      name: "Skills",
-      z: "z-[1]",
-      rotate: "-rotate-1",
-      margin: "mt-[16rem]",
-      right: "",
-    },
-    {
-      name: "Experience",
-      z: "z-[2]",
-      rotate: "rotate-1",
-      margin: "mt-[25rem]",
-      right: "",
-    },
-  ]
-
-  const [sectionInfo, setSectionInfo] = useState<SectionInfo[]>(
-    [ ...initialSectionInfo ]
-  )
-  const [tagClicked, setTagClicked] = useState<String | "">("")
-
-  const handleClick = (sectionButton: String) => {
-    setTagClicked((prevTagClicked) => {
-      if(prevTagClicked === sectionButton){
-        return ""
-      } else {
-        return sectionButton
-      }
-    })
-    setSectionInfo((prevSectioInfo) => {
-      return prevSectioInfo.map((section) => {
-        const newSection = { ...section }
-        if(section.name !== sectionButton || section.name === tagClicked){
-          const initialSection = initialSectionInfo.find(obj => obj.name === section.name);
-          if(initialSection){
-            newSection.z = initialSection.z;
-            newSection.rotate = initialSection.rotate;
-            newSection.right = initialSection.right;
-          } 
-        } else {
-          newSection.z = "z-30";     
-          newSection.rotate = "rotate-0";   
-          newSection.right = "-right-[22rem]";   
-        }
-        return newSection
-      })
-    })
-  };
-
+export function Files({sectionInfo, handleClick}: FileProps) {
   return(
     <div className="relative">
       <div
@@ -76,12 +11,12 @@ export function Files() {
       ></div>
       <div id="sheets">
         {sectionInfo.map(({name, z, rotate, right})=>(
-          <Sheet handleClick={handleClick} right={right} z={z} name={name} rotate={rotate} />
+          <Sheet handleClick={handleClick} right={right} z={z} name={name} rotate={rotate} key={name}/>
         ))}
       </div>
       <div id="tags">
         {sectionInfo.map(({name, z, rotate, margin, right})=>(
-          <Tag handleClick={handleClick} right={right} margin={margin} z={z} name={name} rotate={rotate} />
+          <Tag handleClick={handleClick} right={right} margin={margin} z={z} name={name} rotate={rotate} key={name}/>
         ))}
       </div>
     </div>

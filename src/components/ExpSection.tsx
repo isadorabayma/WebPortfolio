@@ -1,7 +1,7 @@
 import { ExperienceType } from "../expereceInfo";
 
 interface ExpSectionProps {
-  direction: String;
+  direction: string;
   data: ExperienceType[]
 }
 
@@ -13,11 +13,11 @@ export function ExpSection({ direction, data }: ExpSectionProps) {
     
   return(
     <div className={`border-stone-800 border-${direction}-2 w-1/2 h-[38rem] flex flex-col justify-around ${ptSection}`}>
-      {data.map((exp) => {
+      {data.map((exp, i) => {
         const durationHeight = `h-[${exp.duration}rem]`;
         const durationHeightB = `h-[${Number(exp.duration) + 2 }rem]`;
         return(
-          <div className={`flex ${directionBar} ${durationHeightB}`}>
+          <div key={i} className={`flex ${directionBar} ${durationHeightB}`}>
             <div className={`w-56 sm:w-60`}>
               <div className={directionFull}>{exp.name}</div>
               <div className={directionFull}>{exp.place}</div>

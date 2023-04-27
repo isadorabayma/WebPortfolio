@@ -2,14 +2,7 @@ import { X } from "phosphor-react";
 import { About } from "./About";
 import { Experience } from "./Experience";
 import { Skills } from "./Skills";
-
-interface SheetProps {
-  handleClick: (sectionButton: String) => void;
-  name: String;
-  z: string;
-  rotate: String;
-  right: String;
-}
+import { SheetProps } from "../filesInfo";
 
 export function Sheet({name, z, rotate, right, handleClick}: SheetProps) {
   const rightChange = right ? right : "right-12"
@@ -30,3 +23,4 @@ export function Sheet({name, z, rotate, right, handleClick}: SheetProps) {
     </div>
   );
 }
+
