@@ -1,10 +1,10 @@
 export interface FileProps {
-  handleClick: (sectionButton: String) => void;
+  handleSection: (sectionButton: String) => void;
   sectionInfo: SectionInfo[];
 }
 
 export interface SheetProps {
-  handleClick: (sectionButton: String) => void;
+  handleSection: (sectionButton: String) => void;
   name: String;
   z: string;
   rotate: String;

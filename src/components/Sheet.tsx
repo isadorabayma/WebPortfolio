@@ -4,7 +4,7 @@ import { Experience } from "./Experience";
 import { Skills } from "./Skills";
 import { SheetProps } from "../filesInfo";
 
-export function Sheet({name, z, rotate, right, handleClick}: SheetProps) {
+export function Sheet({name, z, rotate, right, handleSection}: SheetProps) {
   const rightChange = right ? right : "right-12"
   
   return (
@@ -15,7 +15,7 @@ export function Sheet({name, z, rotate, right, handleClick}: SheetProps) {
           {"About" === name && <About/>}
           {"Skills" === name && <Skills/>}
           {"Experience" === name && <Experience/>}
-          <button onClick={() => handleClick(name)} className="absolute right-20 sm:right-1 bottom-2">
+          <button onClick={() => handleSection(name)} className="absolute right-20 sm:right-1 bottom-2">
             <X size={25} weight="bold"/>
           </button>
         </div>

@@ -2,7 +2,7 @@ import { FileProps } from "../filesInfo";
 import { Sheet } from "./Sheet";
 import { Tag } from "./Tag";
 
-export function Files({sectionInfo, handleClick}: FileProps) {
+export function Files({sectionInfo, handleSection}: FileProps) {
   return(
     <div className="relative">
       <div
@@ -11,12 +11,12 @@ export function Files({sectionInfo, handleClick}: FileProps) {
       ></div>
       <div id="sheets">
         {sectionInfo.map(({name, z, rotate, right})=>(
-          <Sheet handleClick={handleClick} right={right} z={z} name={name} rotate={rotate} key={name}/>
+          <Sheet handleSection={handleSection} right={right} z={z} name={name} rotate={rotate} key={name}/>
         ))}
       </div>
       <div id="tags">
         {sectionInfo.map(({name, z, rotate, margin, right})=>(
-          <Tag handleClick={handleClick} right={right} margin={margin} z={z} name={name} rotate={rotate} key={name}/>
+          <Tag handleSection={handleSection} right={right} margin={margin} z={z} name={name} rotate={rotate} key={name}/>
         ))}
       </div>
     </div>
