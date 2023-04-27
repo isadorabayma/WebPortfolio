@@ -41,4 +41,18 @@ export const initialSectionInfo: SectionInfo[] = [
       margin: "mt-[25rem]",
       right: "",
     },
+    {
+      name: "Projects",
+      z: "",
+      rotate: "",
+      margin: "",
+      right: "",
+    },
+    {
+      name: "Contact",
+      z: "",
+      rotate: "",
+      margin: "",
+      right: "",
+    },
   ]

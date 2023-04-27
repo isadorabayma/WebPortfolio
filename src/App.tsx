@@ -15,6 +15,8 @@ function App() {
   const [tagClicked, setTagClicked] = useState<String | "">("")
 
   const handleSection = (sectionButton: String) => {
+    console.log("handleSection", sectionButton);
+    
     setTagClicked((prevTagClicked) => {
       if(prevTagClicked === sectionButton){
         return ""
@@ -47,7 +49,7 @@ function App() {
     <div className="bg-zinc-400/80 h-screen min-h-[950px] relative before:absolute before:h-screen before:w-full before:bg-[url('/Images/concrete.jpg')] before:mix-blend-soft-light overflow-hidden">
       <Header sectionInfo={sectionInfo} handleSection={handleSection}/>
       <div className="w-full grid grid-cols-2">
-        <Files sectionInfo={sectionInfo} handleSection={handleSection}/>
+        <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
         <div className="relative">
           <Tablet />
           <CoffeeCard />
