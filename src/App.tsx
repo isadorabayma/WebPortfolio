@@ -3,7 +3,7 @@ import { Header } from "./components/Header";
 import "./styles/tailwindcss.css";
 import { Tablet } from "./components/Tablet";
 import { Files } from "./components/Files";
-import { SectionInfo, initialSectionInfo } from "./filesInfo";
+import { SectionInfo, initialSectionInfo, movedSectionInfo } from "./filesInfo";
 import { useState } from "react";
 
 import "./styles/global.css";
@@ -26,19 +26,21 @@ function App() {
     })
   
     setSectionInfo((prevSectioInfo) => {
-      return prevSectioInfo.map((section) => {
+      return prevSectioInfo.map((section, index) => {
         const newSection = { ...section }
         if(section.name !== sectionButton || section.name === tagClicked){
-          const initialSection = initialSectionInfo.find(obj => obj.name === section.name);
-          if(initialSection){
-            newSection.z = initialSection.z;
-            newSection.rotate = initialSection.rotate;
-            newSection.right = initialSection.right;
-          } 
+          console.log("if1", index);
+          if(index < 3) {
+            console.log("if2", index);
+            newSection.z = initialSectionInfo[index].z;
+            newSection.rotate = initialSectionInfo[index].rotate;
+            newSection.right = initialSectionInfo[index].right;
+          }
         } else {
-          newSection.z = "z-30";     
-          newSection.rotate = "rotate-0";   
-          newSection.right = "-right-[22rem]";   
+          console.log("if3", index);
+          newSection.z = movedSectionInfo[index].z;
+          newSection.rotate = movedSectionInfo[index].rotate;
+          newSection.right = movedSectionInfo[index].right;
         }
         return newSection
       })

@@ -56,3 +56,41 @@ export const initialSectionInfo: SectionInfo[] = [
       right: "",
     },
   ]
+
+export const movedSectionInfo: SectionInfo[] = [
+  {
+    name: "About",
+    z: "z-30",
+    rotate: "rotate-0",
+    margin: "mt-[7rem]",
+    right: "-right-[22rem]",
+  },
+  {
+    name: "Skills",
+    z: "z-30",
+    rotate: "rotate-0",
+    margin: "mt-[7rem]",
+    right: "-right-[22rem]",
+  },
+  {
+    name: "Experience",
+    z: "z-30",
+    rotate: "rotate-0",
+    margin: "mt-[7rem]",
+    right: "-right-[22rem]",
+  },
+  {
+    name: "Projects",
+    z: "",
+    rotate: "",
+    margin: "",
+    right: "",
+  },
+  {
+    name: "Contact",
+    z: "",
+    rotate: "",
+    margin: "",
+    right: "",
+  },
+]
