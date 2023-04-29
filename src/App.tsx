@@ -14,7 +14,7 @@ function App() {
   )
   const [tagClicked, setTagClicked] = useState<String | "">("")
 
-  const handleSection = (sectionButton: String) => {
+  const handleSection = (sectionButton: String, indexClicked: number) => {
     console.log("handleSection", sectionButton);
     
     setTagClicked((prevTagClicked) => {
@@ -28,16 +28,22 @@ function App() {
     setSectionInfo((prevSectioInfo) => {
       return prevSectioInfo.map((section, index) => {
         const newSection = { ...section }
-        if(section.name !== sectionButton || section.name === tagClicked){
-          console.log("if1", index);
-          if(index < 3) {
-            console.log("if2", index);
+        console.log("sectionButton:", sectionButton, "tagClicked:", tagClicked,"section.name:", section.name, "indexClicked:", indexClicked );
+        
+        if(section.name === tagClicked){
+          console.log("if1 - Já tava aberto", section.name, index);
+          newSection.z = initialSectionInfo[index].z;
+            newSection.rotate = initialSectionInfo[index].rotate;
+            newSection.right = initialSectionInfo[index].right;
+
+        } else if(section.name !== sectionButton && indexClicked < 3) {
+            console.log("if2 - reset", section.name, index);
             newSection.z = initialSectionInfo[index].z;
             newSection.rotate = initialSectionInfo[index].rotate;
             newSection.right = initialSectionInfo[index].right;
-          }
-        } else {
-          console.log("if3", index);
+
+        } else if(section.name === sectionButton) {
+          console.log("if3 - moved", section.name, index);
           newSection.z = movedSectionInfo[index].z;
           newSection.rotate = movedSectionInfo[index].rotate;
           newSection.right = movedSectionInfo[index].right;

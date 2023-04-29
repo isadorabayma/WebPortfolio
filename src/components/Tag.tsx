@@ -1,19 +1,20 @@
 interface TagProps {
-  handleSection: (sectionButton: String) => void;
+  handleSection: (sectionButton: String, indexClicked: number) => void;
   name: String;
   z: string;
   rotate: String;
   margin: String;
   right: String;
+  index: number;
 }
 
-export function Tag({handleSection, margin, z, rotate, name, right}: TagProps) {
+export function Tag({handleSection, margin, z, rotate, name, right, index}: TagProps) {
   const rightChange = right ? right : "right-12"
 
   return (
     <button 
       id="tag-sheet"
-      onClick={() => handleSection(name)}
+      onClick={() => handleSection(name, index)}
       className={`absolute transition-all ease-in-out duration-1000 bg-stone-200 h-32 w-9 ${margin} rounded-r-md  ${rightChange} ${z} ${rotate} m-12 border-[1px] border-l-0 border-gray-300 p-3 hover:${!right && "w-[52px]"} hover:${!right && "right-8"} hover:${!right && "pl-8"}`}
     >
       <div

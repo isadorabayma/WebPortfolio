@@ -1,14 +1,15 @@
 export interface FileProps {
-  handleSection: (sectionButton: String) => void;
+  handleSection: (sectionButton: String, indexClicked: number) => void;
   sectionInfo: SectionInfo[];
 }
 
 export interface SheetProps {
-  handleSection: (sectionButton: String) => void;
+  handleSection: (sectionButton: String, indexClicked: number) => void;
   name: String;
   z: string;
   rotate: String;
   right: String;
+  index: number;
 }
 
 export interface SectionInfo {
@@ -81,16 +82,16 @@ export const movedSectionInfo: SectionInfo[] = [
   },
   {
     name: "Projects",
-    z: "",
-    rotate: "",
-    margin: "",
-    right: "",
+    z: "xxxx",
+    rotate: "xxxx",
+    margin: "xxxx",
+    right: "xxxx",
   },
   {
     name: "Contact",
-    z: "",
-    rotate: "",
-    margin: "",
-    right: "",
+    z: "xxxx",
+    rotate: "xxxx",
+    margin: "xxxx",
+    right: "xxxx",
   },
 ]
