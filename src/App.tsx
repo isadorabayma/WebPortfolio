@@ -54,7 +54,7 @@ function App() {
         <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
         <div className="relative">
           <Tablet sectionInfo={sectionInfo} handleSection={handleSection}/>
-          <CoffeeCard/>
+          <CoffeeCard sectionInfo={sectionInfo} handleSection={handleSection}/>
         </div>
       </div>
     </div>

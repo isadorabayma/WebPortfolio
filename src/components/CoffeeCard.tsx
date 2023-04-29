@@ -1,12 +1,16 @@
 import "../styles/global.css";
 import coffee from "../Images/coffee.png";
 import { EnvelopeOpen, GithubLogo, LinkedinLogo } from "phosphor-react";
+import { FileProps } from "../filesInfo";
 
-export function CoffeeCard() {
+export function CoffeeCard({handleSection, sectionInfo}: FileProps) {
+  const CARD_INDEX = 3;
+  const projects = sectionInfo[CARD_INDEX];
+  const {name, right, z} = projects
   return (
-    <div>
+    <div onClick={() => handleSection(name, CARD_INDEX)}>
       <div className="flex lg:pt-[40rem]">
-        <div className="absolute transition-all ease-in-out duration-700 -left-16 sm:left-10 md:left-24 xl:left-40 hover:-left-[20rem] md:hover:-left-[10rem] pt-8 lg:pt-28 lg:pr-[40px]">
+        <div className={`absolute transition-all ease-in-out duration-700 ${right} ${z} pt-8 lg:pt-28 lg:pr-[40px]`}>
           <div className="bg-teal-800 h-[9rem] w-[33rem] rounded-md place-self-end pl-5 sm:pl-8 flex flex-row space-x-6">
             <div className="my-auto flex flex-row space-x-5">
               <div>

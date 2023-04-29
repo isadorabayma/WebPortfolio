@@ -2,13 +2,13 @@ import { X } from "phosphor-react";
 import { FileProps } from "../filesInfo";
 
 export function Tablet({handleSection, sectionInfo}: FileProps) {
-  const PROJECTSINDEX = 3;
-  const projects = sectionInfo[PROJECTSINDEX];
+  const PROJECTS_INDEX = 3;
+  const projects = sectionInfo[PROJECTS_INDEX];
   const {margin, name, rotate, right, z} = projects
 
   return (
     <div id="tablet" 
-    onClick={() => handleSection(name, PROJECTSINDEX)}
+    onClick={() => handleSection(name, PROJECTS_INDEX)}
     className={`absolute ${margin} ${rotate} ${right} ${z} drop-shadow-xl h-[41rem] sm:h-[35rem] w-[23rem] sm:w-[50rem] bg-black rounded-[2rem] border-b-2 border-r-2 border-stone-600 lg:ml-14 p-[1rem] ring-1 ring-gray-900/5`}>
       <div id="screan" className="bg-stone-200 h-[37rem] sm:h-[31rem] w-full lg:w-[43rem] border-2 border-stone-800 rounded-2xl overflow-auto">
         <h1 className="text-5xl text-stone-800 mt-3 ml-5 font-serif font-semibold">Projects</h1>
