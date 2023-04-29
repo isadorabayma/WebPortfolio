@@ -53,8 +53,8 @@ function App() {
       <div className="w-full grid grid-cols-2">
         <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
         <div className="relative">
-          <Tablet />
-          <CoffeeCard />
+          <Tablet sectionInfo={sectionInfo} handleSection={handleSection}/>
+          <CoffeeCard/>
         </div>
       </div>
     </div>

@@ -44,9 +44,9 @@ export const initialSectionInfo: SectionInfo[] = [
     },
     {
       name: "Projects",
-      z: "",
-      rotate: "",
-      margin: "",
+      z: "z-10",
+      rotate: "rotate-6",
+      margin: "mt-56 lg:mt-16",
       right: "",
     },
     {
@@ -84,8 +84,8 @@ export const movedSectionInfo: SectionInfo[] = [
     name: "Projects",
     z: "z-30",
     rotate: "rotate-0",
-    margin: "xxxx",
-    right: "xxxx",
+    margin: "mt-6 lg:mt-6",
+    right: "-right-[1.5rem]",
   },
   {
     name: "Contact",
