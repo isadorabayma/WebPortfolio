@@ -30,18 +30,12 @@ function App() {
         const newSection = { ...section }
         console.log("sectionButton:", sectionButton, "tagClicked:", tagClicked,"section.name:", section.name, "indexClicked:", indexClicked );
         
-        if(section.name === tagClicked){
+        if(section.name !== sectionButton || section.name === tagClicked){
           console.log("if1 - Já tava aberto", section.name, index);
           newSection.z = initialSectionInfo[index].z;
             newSection.rotate = initialSectionInfo[index].rotate;
             newSection.right = initialSectionInfo[index].right;
-
-        } else if(section.name !== sectionButton && indexClicked < 3) {
-            console.log("if2 - reset", section.name, index);
-            newSection.z = initialSectionInfo[index].z;
-            newSection.rotate = initialSectionInfo[index].rotate;
-            newSection.right = initialSectionInfo[index].right;
-
+            
         } else if(section.name === sectionButton) {
           console.log("if3 - moved", section.name, index);
           newSection.z = movedSectionInfo[index].z;
