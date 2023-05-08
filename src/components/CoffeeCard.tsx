@@ -34,11 +34,11 @@ export function CoffeeCard({handleSection, sectionInfo}: FileProps) {
             </div>
           </div>
         </div>
-        <img
+        {/* <img
           src={coffee}
           alt=""
           className="invisible lg:visible rotate-[38deg] hover:rotate-45 h-72 drop-shadow-2xl ml-[20rem] xl:ml-[24rem] sxl:ml-[30rem]"
-        />
+        /> */}
       </div>
     </div>
   );

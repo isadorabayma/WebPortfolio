@@ -5,6 +5,8 @@ import { Tablet } from "./components/Tablet";
 import { Files } from "./components/Files";
 import { SectionInfo, initialSectionInfo, movedSectionInfo } from "./filesInfo";
 import { useState } from "react";
+import Desk from "./Images/deskBase.png";
+
 
 import "./styles/global.css";
 
@@ -48,7 +50,12 @@ function App() {
   };
 
   return (
-    <div className="bg-zinc-400/80 h-screen min-h-[950px] relative before:absolute before:h-screen before:w-full before:bg-[url('/Images/concrete.jpg')] before:mix-blend-soft-light overflow-hidden">
+    <div className="bg-zinc-400/80 h-screen min-h-[950px] relative overflow-hidden">
+      <img
+          src={Desk}
+          alt="Foto de perfil da Isadora"
+          className="absolute h-[120rem] w-[120rem]"
+        />
       <Header sectionInfo={sectionInfo} handleSection={handleSection}/>
       <div className="w-full grid grid-cols-2">
         <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
