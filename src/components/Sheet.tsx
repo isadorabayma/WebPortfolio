@@ -9,7 +9,7 @@ export function Sheet({name, z, rotate, right, handleSection, index}: SheetProps
   // ${rightChange}
   
   return (
-    <div id="sheet" className={`absolute
+    <div id="sheet" onClick={() => handleSection(name, index)} className={`absolute
      right-[14rem]
      transition-all ease-in-out duration-1000 ${z} ${rotate} ${right} drop-shadow-xl bg-stone-200 ring-1 ring-gray-900/10 w-[35rem] h-[50rem]`}>
       <div className="h-[43rem]">
