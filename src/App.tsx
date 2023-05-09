@@ -35,14 +35,16 @@ function App() {
         if(section.name !== sectionButton || section.name === tagClicked){
           console.log("if1 - Já tava aberto", section.name, index);
           newSection.z = initialSectionInfo[index].z;
-            newSection.rotate = initialSectionInfo[index].rotate;
-            newSection.right = initialSectionInfo[index].right;
+          newSection.rotate = initialSectionInfo[index].rotate;
+          newSection.right = initialSectionInfo[index].right;
+          newSection.margin = initialSectionInfo[index].margin;
             
         } else if(section.name === sectionButton) {
           console.log("if3 - moved", section.name, index);
           newSection.z = movedSectionInfo[index].z;
           newSection.rotate = movedSectionInfo[index].rotate;
           newSection.right = movedSectionInfo[index].right;
+          newSection.margin = movedSectionInfo[index].margin;
         }
         return newSection
       })
@@ -54,7 +56,7 @@ function App() {
       <img
           src={Desk}
           alt="Foto de perfil da Isadora"
-          className="absolute h-[120rem] w-[120rem]"
+          className="absolute object-none object-left-top"
         />
       <Header sectionInfo={sectionInfo} handleSection={handleSection}/>
       <div className="w-full grid grid-cols-2">

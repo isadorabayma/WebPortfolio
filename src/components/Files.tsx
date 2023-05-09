@@ -6,10 +6,12 @@ import CardTexture from "../Images/darkCardTexture.jpg";
 
 export function Files({sectionInfo, handleSection}: FileProps) {
   return(
-    <div className="relative top-96 right-36 -rotate-[24deg]">
+    <div className="relative">
       <div
         id="file-cover"
-        className="absolute top-16 right-36 w-[35rem] h-[50rem] object-cover ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-r-md"
+        className="absolute 
+        top-64 right-64 -rotate-[24deg]
+         w-[35rem] h-[50rem] ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-r-md"
       >
         <img
           src={CardTexture}

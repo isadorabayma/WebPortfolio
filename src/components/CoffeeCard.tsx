@@ -9,8 +9,8 @@ export function CoffeeCard({handleSection, sectionInfo}: FileProps) {
   const {name, right, z} = projects
   return (
     <div onClick={() => handleSection(name, CARD_INDEX)}>
-      <div className="flex lg:pt-[40rem]">
-        <div className={`absolute transition-all ease-in-out duration-700 ${right} ${z} pt-8 lg:pt-28 lg:pr-[40px]`}>
+      <div className="flex">
+        <div className={`absolute transition-all ease-in-out duration-700 ${right} ${z} pt-8 lg:pr-[40px]`}>
           <div className="bg-teal-800 h-[9rem] w-[33rem] rounded-md place-self-end pl-5 sm:pl-8 flex flex-row space-x-6">
             <div className="my-auto flex flex-row space-x-5">
               <div>
