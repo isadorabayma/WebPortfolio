@@ -17,7 +17,7 @@ export function Files({sectionInfo, handleSection}: FileProps) {
         <img
           src={CardTexture}
           alt="Foto de perfil da Isadora"
-          className="absolute h-full object-cover"
+          className="absolute h-full w-full object-cover"
         />
       </div>
       <div id="sheets">

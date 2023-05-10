@@ -47,7 +47,7 @@ export const initialSectionInfo: SectionInfo[] = [
       z: "z-10",
       rotate: "-rotate-[30deg] sm:-rotate-[5deg]",
       margin: "mt-96 sm:mt-56 h-[30rem] w-[14rem] sm:h-[35rem] sm:w-[50rem]",
-      right: "right-24 sm:right-[14rem]",
+      right: "left-24 sm:right-[14rem]",
     },
     {
       name: "Contact",      
@@ -85,7 +85,7 @@ export const movedSectionInfo: SectionInfo[] = [
     z: "z-30",
     rotate: "rotate-0",
     margin: "mt-6 lg:mt-6 h-[45rem] w-[21rem] sm:h-[35rem] sm:w-[50rem]",
-    right: "right-0",
+    right: "left-1",
   },
   {
     name: "Contact",
