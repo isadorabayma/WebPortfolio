@@ -10,11 +10,10 @@ export function Tablet({handleSection, sectionInfo}: FileProps) {
     <div id="tablet" 
     onClick={() => handleSection(name, PROJECTS_INDEX)}
     className={`absolute ${margin} ${rotate} ${right} ${z} drop-shadow-xl 
-    bg-black rounded-[2rem] border-b-2 border-r-2 border-stone-600 
-    lg:ml-14 
-    p-1 sm:p-[1rem] ring-1 ring-gray-900/5`}>
+    bg-black rounded-[2rem] border-b-2 border-r-2 border-stone-600
+    p-1 ring-1 ring-gray-900/5`}>
       <div id="screan" className="bg-stone-200 
-      h-full sm:h-[31rem] w-full lg:w-[43rem] border-2 border-stone-800 rounded-[1.75rem] sm:rounded-2xl overflow-auto">
+      h-full w-full lg:w-[43rem] border-2 border-stone-800 rounded-[1.75rem] overflow-auto">
         <h1 className="text-5xl text-stone-800 mt-3 ml-5 font-serif font-semibold">Projects</h1>
         <div id="content-tablet-section" className="relative border-y-2 border-stone-800 m-4 mb-10 py-3">
           <div className="bg-white overflow-hidden rounded-2xl my-5 drop-shadow-xl">

@@ -56,15 +56,13 @@ function App() {
       <img
           src={Desk}
           alt="Foto de perfil da Isadora"
-          className="absolute object-none -top-5 h-full w-full object-left-top"
+          className="absolute object-none h-full w-full object-left-top"
         />
       <Header sectionInfo={sectionInfo} handleSection={handleSection}/>
       <div className="w-full grid grid-cols-2">
         <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
-        <div className="">
-          <Tablet sectionInfo={sectionInfo} handleSection={handleSection}/>
-          {/* <CoffeeCard sectionInfo={sectionInfo} handleSection={handleSection}/> */}
-        </div>
+        <Tablet sectionInfo={sectionInfo} handleSection={handleSection}/>
+        {/* <CoffeeCard sectionInfo={sectionInfo} handleSection={handleSection}/> */}
       </div>
     </div>
   );
