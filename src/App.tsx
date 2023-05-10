@@ -59,11 +59,9 @@ function App() {
           className="absolute object-none h-full w-full object-left-top"
         />
       <Header sectionInfo={sectionInfo} handleSection={handleSection}/>
-      <div className="w-full grid grid-cols-2">
-        <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
-        <Tablet sectionInfo={sectionInfo} handleSection={handleSection}/>
-        {/* <CoffeeCard sectionInfo={sectionInfo} handleSection={handleSection}/> */}
-      </div>
+      <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
+      <Tablet sectionInfo={sectionInfo} handleSection={handleSection}/>
+      {/* <CoffeeCard sectionInfo={sectionInfo} handleSection={handleSection}/> */}
     </div>
   );
 }

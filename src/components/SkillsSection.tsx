@@ -8,8 +8,8 @@ interface SkillsSectionProps {
 export function SkillsSection({ skills, title }: SkillsSectionProps) {
   return (
       <div className="pt-8">
-        <h2 className="text-3xl font-serif font-semibold pl-32 sm:pl-4">{title}</h2>
-        <div className="flex flex-wrap border-l-2 border-stone-800 ml-24 sm:ml-5  px-3 sm:pl-4">
+        <h2 className="text-3xl font-serif font-semibold pl-4">{title}</h2>
+        <div className="flex flex-wrap border-l-2 border-stone-800 ml-5 px-3 sm:pl-4">
           {skills.map(([Icon, Name]: SkillType) => (
             <div
               key={Name}

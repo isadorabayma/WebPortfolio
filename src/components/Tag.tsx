@@ -16,7 +16,7 @@ export function Tag({handleSection, margin, z, rotate, name, index}: TagProps) {
     <button 
       id="tag-sheet"
       onClick={() => handleSection(name, index)}
-      className={`absolute transition-all ease-in-out duration-1000 bg-stone-200 h-24 sm:h-32 w-8 sm:w-10 ${margin} rounded-r-md ${z} ${rotate} border-[1px] border-l-0 border-gray-400/60 p-3}`}
+      className={`absolute bg-stone-200 h-24 sm:h-32 w-8 sm:w-10 ${margin} rounded-r-md ${z} ${rotate} border-[1px] border-l-0 border-gray-400/60 p-3}`}
     >
       <div
         id="label-tag-sheet"
