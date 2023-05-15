@@ -58,7 +58,7 @@ function App() {
           alt="Foto de perfil da Isadora"
           className="absolute -z-10 object-none h-full w-full object-left-top"
         />
-      <Header sectionInfo={sectionInfo} handleSection={handleSection}/>
+      <Header sectionInfo={sectionInfo} handleSection={handleSection} tagClicked={tagClicked}/>
       <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
       <Tablet sectionInfo={sectionInfo} handleSection={handleSection}/>
       {/* <CoffeeCard sectionInfo={sectionInfo} handleSection={handleSection}/> */}

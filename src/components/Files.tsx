@@ -10,14 +10,14 @@ export function Files({sectionInfo, handleSection}: FileProps) {
       <div
         id="file-cover"
         className="absolute 
-        top-[26rem] lg:top-[27rem] -left-[15rem] lg:-left-[4rem] -rotate-[27deg] bg-amber-900
+        top-[26rem] lg:top-[27rem] -left-[21rem] lg:-left-[4rem] -rotate-[27deg] bg-amber-900
          w-[45rem] h-[60rem] ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-r-md"
       >
-        {/* <img
+        <img
           src={CardTexture}
           alt="Foto de perfil da Isadora"
-          className="absolute h-full w-full object-cover"
-        /> */}
+          className="absolute h-full w-full object-cover rounded-r-md"
+        />
       </div>
       <div id="sheets">
         {sectionInfo.map(({name, z, rotate, right}, index)=>(
