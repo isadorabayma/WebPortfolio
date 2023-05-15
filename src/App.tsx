@@ -52,11 +52,11 @@ function App() {
   };
 
   return (
-    <div className="bg-zinc-400/80 h-screen min-h-[950px] relative overflow-hidden">
+    <div className="h-screen min-h-[950px] relative overflow-hidden">
       <img
           src={Desk}
           alt="Foto de perfil da Isadora"
-          className="absolute object-none h-full w-full object-left-top"
+          className="absolute -z-10 object-none h-full w-full object-left-top"
         />
       <Header sectionInfo={sectionInfo} handleSection={handleSection}/>
       <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
