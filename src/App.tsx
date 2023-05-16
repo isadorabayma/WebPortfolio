@@ -61,7 +61,7 @@ function App() {
       <Header sectionInfo={sectionInfo} handleSection={handleSection} tagClicked={tagClicked}/>
       <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
       <Tablet sectionInfo={sectionInfo} handleSection={handleSection}/>
-      {/* <CoffeeCard sectionInfo={sectionInfo} handleSection={handleSection}/> */}
+      <CoffeeCard sectionInfo={sectionInfo} handleSection={handleSection}/>
     </div>
   );
 }

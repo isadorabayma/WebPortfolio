@@ -38,14 +38,14 @@ export const initialSectionInfo: SectionInfo[] = [
       name: "Skills",
       z: "z-[2]",
       rotate: "top-[25rem] lg:top-[26rem] -rotate-[25deg]",
-      margin: "mt-[1rem] sm:mt-[3rem] left-[14rem] sm:left-[22rem] lg:left-[33rem]",
+      margin: "mt-[1rem] sm:mt-[3rem] left-[14rem] sm:left-[15rem] lg:left-[33rem]",
       right: "w-[42rem] h-[60rem] -left-[18rem] lg:left-[0rem]",
     },
     {
       name: "Experience",
       z: "z-[1]",
       rotate: "top-[25rem] lg:top-[26rem] -rotate-[23deg]",
-      margin: "mt-[7rem] sm:mt-[11rem] left-[17rem] sm:left-[26rem] lg:left-[37rem]",
+      margin: "mt-[7rem] sm:mt-[11rem] left-[17rem] sm:left-[19rem] lg:left-[37rem]",
       right: "w-[42rem] h-[60rem] -left-[18rem] lg:left-[0rem]",
     },
     {

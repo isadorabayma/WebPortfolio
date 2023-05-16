@@ -10,7 +10,7 @@ export function Files({sectionInfo, handleSection}: FileProps) {
       <div
         id="file-cover"
         className="absolute 
-        top-[26rem] lg:top-[27rem] -left-[21rem] lg:-left-[4rem] -rotate-[27deg] bg-amber-900
+        top-[26rem] lg:top-[27rem] -left-[21rem] lg:-left-[4rem] -rotate-[27deg]
          w-[45rem] h-[60rem] ring-2 ring-gray-900/10 z-10 drop-shadow-2xl rounded-r-md"
       >
         <img
