@@ -16,7 +16,7 @@ function App() {
   )
   const [tagClicked, setTagClicked] = useState<String | "">("")
 
-  const handleSection = (sectionButton: String, indexClicked: number) => {
+  const handleSection = (sectionButton: String) => {
     console.log("handleSection", sectionButton);
     
     setTagClicked((prevTagClicked) => {
@@ -30,17 +30,14 @@ function App() {
     setSectionInfo((prevSectioInfo) => {
       return prevSectioInfo.map((section, index) => {
         const newSection = { ...section }
-        console.log("sectionButton:", sectionButton, "tagClicked:", tagClicked,"section.name:", section.name, "indexClicked:", indexClicked );
-        
+
         if(section.name !== sectionButton || section.name === tagClicked){
-          console.log("if1 - Já tava aberto", section.name, index);
           newSection.z = initialSectionInfo[index].z;
           newSection.rotate = initialSectionInfo[index].rotate;
           newSection.right = initialSectionInfo[index].right;
           newSection.margin = initialSectionInfo[index].margin;
             
         } else if(section.name === sectionButton) {
-          console.log("if3 - moved", section.name, index);
           newSection.z = movedSectionInfo[index].z;
           newSection.rotate = movedSectionInfo[index].rotate;
           newSection.right = movedSectionInfo[index].right;

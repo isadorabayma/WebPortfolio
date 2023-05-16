@@ -51,9 +51,9 @@ export const initialSectionInfo: SectionInfo[] = [
     {
       name: "Projects",
       z: "z-10",
-      rotate: "-rotate-[15deg] md:-rotate-[20deg]",
-      margin: "mt-[27rem] md:mt-[18rem] lg:mt-[15rem] h-[30rem] w-[14rem] md:h-[49rem] md:w-[30rem]",
-      right: "left-[3rem] md:left-auto md:-right-[15rem] lg:-right-[8rem] xl:right-12",
+      rotate: "-rotate-[10deg] md:-rotate-[20deg]",
+      margin: "mt-[30rem] md:mt-[18rem] lg:mt-[15rem] h-[34rem] w-[16rem] md:h-[49rem] md:w-[30rem]",
+      right: "left-[1rem] md:left-auto md:-right-[15rem] lg:-right-[8rem] xl:right-12",
     },
     {
       name: "Contact",      
