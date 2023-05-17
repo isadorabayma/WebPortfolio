@@ -1,11 +1,12 @@
-import { CoffeeCard } from "./components/CoffeeCard";
+import { Card } from "./components/Card";
 import { Header } from "./components/Header";
 import "./styles/tailwindcss.css";
 import { Tablet } from "./components/Tablet";
 import { Files } from "./components/Files";
 import { SectionInfo, initialSectionInfo, movedSectionInfo } from "./filesInfo";
 import { useState } from "react";
-import Desk from "./Images/deskBase.png";
+import Desk from "./Images/concrete.png";
+import KeyBoard from "./Images/keyboard.png";
 
 
 import "./styles/global.css";
@@ -52,13 +53,20 @@ function App() {
     <div className="h-screen min-h-[950px] relative overflow-hidden">
       <img
           src={Desk}
-          alt="Foto de perfil da Isadora"
-          className="absolute -z-10 object-none h-full w-full object-left-top"
+          alt="Textura de concreto"
+          className="absolute -z-20 object-cover h-full w-full"
         />
       <Header sectionInfo={sectionInfo} handleSection={handleSection} tagClicked={tagClicked}/>
+      <div className="absolute -z-10 -rotate-[30deg] -left-64 w-[58rem] -top-72">
+        <img
+            src={KeyBoard}
+            alt="teclado visto de cima"
+            className="object-contain"
+          />
+      </div>
       <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
       <Tablet sectionInfo={sectionInfo} handleSection={handleSection}/>
-      <CoffeeCard sectionInfo={sectionInfo} handleSection={handleSection}/>
+      <Card sectionInfo={sectionInfo} handleSection={handleSection}/>
     </div>
   );
 }
