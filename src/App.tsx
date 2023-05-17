@@ -63,7 +63,7 @@ function App() {
           // onClick={() => handleSection("")}
         />
       <Header sectionInfo={sectionInfo} handleSection={handleSection} tagClicked={tagClicked}/>
-      <div className="absolute -z-10 -rotate-[30deg] -left-64 w-[58rem] -top-80">
+      <div className="absolute -z-10 -rotate-[30deg] -left-64 w-[58rem] -top-80 drop-shadow-3xl">
         <img
             src={KeyBoard}
             alt="teclado visto de cima"
@@ -77,12 +77,7 @@ function App() {
             className="object-contain"
           />
       </div>
-      <div className="absolute z-10 rotate-[90deg] w-[18rem] -right-12 bottom-44">
-        <img
-            src={Tea}
-            alt="xicara de chá"
-            className="invisible xx:visible object-contain"
-          />
+      <div id="shadow-plant" className="absolute z-[8] w-[15rem] h-[15rem] rounded-full -right-28 md:right-2 lg:right-[23rem] top-36 md:top-24 bg-black/50 blur-lg">
       </div>
       <div className="absolute z-10 rotate-[90deg] w-[15rem] -right-8 bottom-44 lg:right-32 lg:bottom-auto lg:top-20">
         <img
@@ -91,12 +86,16 @@ function App() {
             className="invisible sm:visible object-contain"
           />
       </div>
-      <div className="absolute z-20 -rotate-[25deg] w-20 left-[24rem] sm:left-96 top-80 2xl:left-[44rem]">
+      <div id="shadow-pins" className="invisible sm:visible absolute z-[8] w-[15rem] h-[15rem] rounded-full -right-12 bottom-40 lg:right-28 lg:bottom-auto lg:top-24 bg-black/50 blur-lg">
+      </div>
+      <div className="absolute z-20 -rotate-[25deg] w-20 left-[24rem] top-80 2xl:left-[44rem]">
         <img
             src={Pen}
             alt="lápis preto"
             className="object-cover"
           />
+      </div>
+      <div id="shadow-pen" className="absolute z-[18] -rotate-[25deg] w-7 h-[50rem] left-[29rem] top-[25rem] 2xl:left-[49rem] bg-black/70 blur-lg">
       </div>
       <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
       <Tablet sectionInfo={sectionInfo} handleSection={handleSection}/>

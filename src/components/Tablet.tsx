@@ -8,9 +8,11 @@ export function Tablet({handleSection, sectionInfo}: FileProps) {
 
   return (
     <>
+      <div id="shadow-tablet" className={`absolute z-[18] ${margin} ${rotate} bg-black/70 blur-lg`}>
+      </div>
       <div id="tablet" 
       onClick={() => handleSection(name, PROJECTS_INDEX)}
-      className={`absolute ${margin} ${rotate} ${right} ${z} drop-shadow-xl 
+      className={`absolute ${rotate} ${right} ${z} drop-shadow-xl 
       bg-black rounded-[2rem] border-b-2 border-r-2 border-stone-600
       p-1 md:py-10 ring-1 ring-gray-900/5`}>
         {/* <div className="invisible md:visible border-2 border-stone-800 rounded-full h-5 w-5 mx-auto my-3"></div> */}
