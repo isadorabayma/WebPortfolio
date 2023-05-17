@@ -63,7 +63,7 @@ function App() {
           // onClick={() => handleSection("")}
         />
       <Header sectionInfo={sectionInfo} handleSection={handleSection} tagClicked={tagClicked}/>
-      <div className="absolute -z-10 -rotate-[30deg] -left-64 w-[58rem] -top-80 drop-shadow-3xl">
+      <div className="absolute -z-10 md:z-[5] -rotate-[30deg] -left-64 w-[58rem] -top-80 drop-shadow-3xl">
         <img
             src={KeyBoard}
             alt="teclado visto de cima"
