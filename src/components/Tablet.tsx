@@ -21,9 +21,9 @@ export function Tablet({handleSection, sectionInfo}: FileProps) {
       p-1 md:py-10 ring-1 ring-gray-900/5`}>
         {/* <div className="invisible md:visible border-2 border-stone-800 rounded-full h-5 w-5 mx-auto my-3"></div> */}
         <div id="screan" className="bg-stone-200 
-        h-full w-full border-2 border-stone-800 rounded-[1.75rem] md:rounded-sm overflow-auto">
-          <h1 className="text-2xl md:text-5xl text-stone-800 mt-3 ml-5 font-serif font-semibold">Projects</h1>
-          <div id="content-tablet-section" className="relative border-y-2 border-stone-800 m-1 md:m-4 md:mb-10 md:py-3">
+        h-full w-full border-2 border-stone-800 rounded-[1.75rem] md:rounded-sm overflow-auto scrollbar-hide">
+          <h1 className="text-3xl md:text-5xl text-stone-800 mt-3 ml-5 font-serif font-semibold">Projects</h1>
+          <div id="content-tablet-section" className="relative border-y-2 border-stone-800 m-2 md:m-4 md:mb-10 md:py-3">
             { projectsInfo.map((project) => (
               <ProjectCard key={project.name} project={project}/>
             )) }
