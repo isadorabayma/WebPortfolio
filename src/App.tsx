@@ -67,7 +67,7 @@ function App() {
             className="object-contain"
           />
       </div>
-      <div className="absolute z-10 -rotate-[30deg] w-[15rem] -right-24 md:right-6 lg:right-44 top-32 md:top-20">
+      <div className="absolute z-10 -rotate-[30deg] w-[15rem] -right-24 md:right-6 lg:right-96 top-32 md:top-20">
         <img
             src={Plant}
             alt="vasinho com suculenta"
@@ -81,14 +81,14 @@ function App() {
             className="invisible xx:visible object-contain"
           />
       </div>
-      <div className="absolute z-20 rotate-[90deg] w-[16rem] -right-8 bottom-44 md:right-auto md:-left-12 md:bottom-10">
+      <div className="absolute z-10 rotate-[90deg] w-[15rem] -right-8 bottom-44 lg:right-32 lg:bottom-auto lg:top-20">
         <img
             src={Pins}
             alt="porta trecos de curtiça com clipes"
             className="invisible sm:visible object-contain"
           />
       </div>
-      <div className="absolute z-10 -rotate-[18deg] w-20 left-80 sm:left-96 top-80">
+      <div className="absolute z-20 -rotate-[25deg] w-20 left-[24rem] sm:left-96 top-80 2xl:left-[44rem]">
         <img
             src={Pen}
             alt="lápis preto"
