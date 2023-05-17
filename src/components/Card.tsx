@@ -9,7 +9,7 @@ export function Card({handleSection, sectionInfo}: FileProps) {
   return (
     <div onClick={() => handleSection(name, CARD_INDEX)}>
       <div className="flex"> 
-        <div className={`absolute transition-all ease-in-out duration-700 ${z} top-28 right-10`}>
+        <div className={`absolute transition-all ease-in-out duration-700 ${z} top-28 right-10 md:right-44 lg:right-80 md:top-16`}>
           <div className="bg-teal-800 h-[10.2rem] w-[17.8rem] rounded-md flex flex-col space-y-4 justify-center px-4">
             <div className="e">
               <h1 className="text-2xl text-white">Isadora Bayma</h1>
