@@ -7,6 +7,8 @@ import { SectionInfo, initialSectionInfo, movedSectionInfo } from "./filesInfo";
 import { useState } from "react";
 import Desk from "./Images/concrete.png";
 import KeyBoard from "./Images/keyboard.png";
+import Tea from "./Images/tea5.png";
+import Pen from "./Images/pen4.png";
 
 
 import "./styles/global.css";
@@ -57,11 +59,25 @@ function App() {
           className="absolute -z-20 object-cover h-full w-full"
         />
       <Header sectionInfo={sectionInfo} handleSection={handleSection} tagClicked={tagClicked}/>
-      <div className="absolute -z-10 -rotate-[30deg] -left-64 w-[58rem] -top-72">
+      <div className="absolute -z-10 -rotate-[30deg] -left-64 w-[58rem] -top-80">
         <img
             src={KeyBoard}
             alt="teclado visto de cima"
             className="object-contain"
+          />
+      </div>
+      <div className="absolute z-10 -rotate-[30deg] w-[15rem] -right-24 top-32">
+        <img
+            src={Tea}
+            alt="vasinho com suculenta"
+            className="object-contain"
+          />
+      </div>
+      <div className="absolute z-10 -rotate-[18deg] w-20 left-80 top-80">
+        <img
+            src={Pen}
+            alt="teclado visto de cima"
+            className="object-cover"
           />
       </div>
       <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>

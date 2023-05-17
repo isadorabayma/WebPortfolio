@@ -9,13 +9,13 @@ export function Card({handleSection, sectionInfo}: FileProps) {
   return (
     <div onClick={() => handleSection(name, CARD_INDEX)}>
       <div className="flex"> 
-        <div className={`absolute transition-all ease-in-out duration-700 ${z} top-40 right-10`}>
-          <div className="bg-teal-800 h-[10.2rem] w-[17.8rem] rounded-sm flex flex-col space-y-6 justify-center px-5">
-            <div className="">
+        <div className={`absolute transition-all ease-in-out duration-700 ${z} top-28 right-10`}>
+          <div className="bg-teal-800 h-[10.2rem] w-[17.8rem] rounded-md flex flex-col space-y-4 justify-center px-4">
+            <div className="e">
               <h1 className="text-2xl text-white">Isadora Bayma</h1>
               <h2 className="text-gray-300">Desenvolvedora Fullstack</h2>
             </div>
-            <div className="flex flex-row space-x-2">
+            <div className="border-t-2 border-t-white flex flex-row space-x-2 pt-2">
               <a
                 href="https://www.linkedin.com/in/isadora-bayma/"
                 aria-label="Linkedin profile"
