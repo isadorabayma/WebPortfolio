@@ -12,6 +12,7 @@ import Pen from "./Images/pen4.png";
 import Pins from "./Images/pins2.png";
 
 import "./styles/global.css";
+import { CardContact } from "./components/CardContact";
 
 function App() {
   const [sectionInfo, setSectionInfo] = useState<SectionInfo[]>(
@@ -99,6 +100,7 @@ function App() {
       <Files sectionInfo={sectionInfo.slice(0,3)} handleSection={handleSection}/>
       <Tablet sectionInfo={sectionInfo} handleSection={handleSection}/>
       <Card sectionInfo={sectionInfo} handleSection={handleSection}/>
+      <CardContact sectionInfo={sectionInfo} handleSection={handleSection}/>
     </div>
   );
 }

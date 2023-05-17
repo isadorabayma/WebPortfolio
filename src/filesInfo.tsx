@@ -60,7 +60,7 @@ export const initialSectionInfo: SectionInfo[] = [
       z: "z-[9]",
       rotate: "",
       margin: "",
-      right: "",
+      right: "invisible",
     },
   ]
 
@@ -98,6 +98,6 @@ export const movedSectionInfo: SectionInfo[] = [
     z: "z-30",
     rotate: "",
     margin: "",
-    right: "",
+    right: "visible",
   },
 ]

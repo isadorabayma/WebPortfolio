@@ -1,11 +1,12 @@
 import "../styles/global.css";
 import { EnvelopeOpen, GithubLogo, LinkedinLogo } from "phosphor-react";
 import { FileProps } from "../filesInfo";
+import { AiFillGithub } from "react-icons/ai";
 
 export function Card({handleSection, sectionInfo}: FileProps) {
   const CARD_INDEX = 4;
   const card = sectionInfo[CARD_INDEX];
-  const {name, right, z} = card
+  const {name, z} = card
   return (
     <div onClick={() => handleSection(name, CARD_INDEX)}>
       <div id="shadow-card" className="absolute z-[8] h-[10rem] w-[17.6rem] rounded-md top-[7.5rem] right-7 md:right-40 lg:right-[34rem] md:top-20 bg-black/50 blur-lg">
@@ -28,7 +29,7 @@ export function Card({handleSection, sectionInfo}: FileProps) {
                 href="https://github.com/isadorabayma"
                 aria-label="Linkedin profile"
               >
-                <GithubLogo size={38} weight="fill" className="text-white" />
+                <AiFillGithub size={38} className="text-white" />
               </a>
               <EnvelopeOpen size={38} weight="fill" className="text-white" />
             </div>
