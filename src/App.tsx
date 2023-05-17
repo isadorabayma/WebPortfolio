@@ -9,7 +9,6 @@ import Desk from "./Images/concrete.png";
 import KeyBoard from "./Images/keyboard.png";
 import Plant from "./Images/tea5.png";
 import Pen from "./Images/pen4.png";
-import Tea from "./Images/tea7.png";
 import Pins from "./Images/pins2.png";
 
 import "./styles/global.css";

@@ -1,5 +1,9 @@
 import { X } from "phosphor-react";
 import { FileProps } from "../filesInfo";
+import { ProjectType, projectsInfo } from "../projectsInfo";
+import { ProjectCard } from "./ProjectCard";
+
+// make function filter by language here and pass to projectCard this should change the array of projects the should be in the state here
 
 export function Tablet({handleSection, sectionInfo}: FileProps) {
   const PROJECTS_INDEX = 3;
@@ -20,58 +24,9 @@ export function Tablet({handleSection, sectionInfo}: FileProps) {
         h-full w-full border-2 border-stone-800 rounded-[1.75rem] md:rounded-sm overflow-auto">
           <h1 className="text-2xl md:text-5xl text-stone-800 mt-3 ml-5 font-serif font-semibold">Projects</h1>
           <div id="content-tablet-section" className="relative border-y-2 border-stone-800 m-1 md:m-4 md:mb-10 md:py-3">
-            <div className="bg-white overflow-hidden rounded-2xl my-5 drop-shadow-xl">
-              <img src="https://lh4.googleusercontent.com/GntqrDbtf6I8Es7oZlh6CfcsmJ7o5bbVp8kn14Ol14cMa0PA6ENu0_Q_GmwtAPNLaGNLifh3b6JlOeaxlP86X-fzVgSIlLdbtZifBgsu33AmmazlZVsECpxKNnueh0fpewbCesFm" alt="site 1" />
-              <div className="px-3">
-                <h2 className="my-2 font-bold md:text-lg">Nome do projeto</h2>
-                <p>Descrição do projeto vai entrar aqui nesse espaço. Falando um pouco sobre e quem ajudou, o que eu aprendi e tal </p>
-                <div className="flex flex-row justify-between my-2 font-bold">
-                  <a>html</a>
-                  <p>|</p>
-                  <a>javaScript</a>
-                  <p>|</p>
-                  <a>tailwind</a>
-                </div>
-                <div className="flex flex-row justify-around p-1 mb-3">
-                  <p>Demo</p>
-                  <p>Repo</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white overflow-hidden rounded-2xl my-5 drop-shadow-xl">
-              <img src="https://lh4.googleusercontent.com/AusYVANU-JN_QbvS-1KCz3KK18X9wmS_MO8gtDrrCNYGc4Q-aahzaBqhz5t4fUM2B--FH7IB5f4DKgWABZBLuS_SQk_fOi89uD7DZTZNt1jOZw6KhZDi9Ef2ZJ7dtVGJDGkd-nbw" alt="site 1" />
-              <h2 className="my-2 font-bold text-lg">Nome do projeto</h2>
-              <p>Descrição do projeto vai entrar aqui nesse espaço. Falando um pouco sobre e quem ajudou, o que eu aprendi e tal </p>
-              <div className="flex flex-row justify-around my-2 font-bold">
-                <a>html</a>
-                <p>|</p>
-                <a>javaScript</a>
-                <p>|</p>
-                <a>tailwind</a>
-              </div>
-              <div className="flex flex-row justify-around p-1 mb-3">
-                <p>Demo</p>
-                <p>Repo</p>
-              </div>
-            </div>
-
-            <div className="bg-white overflow-hidden rounded-2xl my-5 drop-shadow-xl">
-              <img src="https://lh4.googleusercontent.com/GntqrDbtf6I8Es7oZlh6CfcsmJ7o5bbVp8kn14Ol14cMa0PA6ENu0_Q_GmwtAPNLaGNLifh3b6JlOeaxlP86X-fzVgSIlLdbtZifBgsu33AmmazlZVsECpxKNnueh0fpewbCesFm" alt="site 1" />
-              <h2 className="my-2 font-bold text-lg">Nome do projeto</h2>
-              <p>Descrição do projeto vai entrar aqui nesse espaço. Falando um pouco sobre e quem ajudou, o que eu aprendi e tal </p>
-              <div className="flex flex-row justify-around my-2 font-bold">
-                <a>html</a>
-                <p>|</p>
-                <a>javaScript</a>
-                <p>|</p>
-                <a>tailwind</a>
-              </div>
-              <div className="flex flex-row justify-around p-1 mb-3">
-                <p>Demo</p>
-                <p>Repo</p>
-              </div>
-            </div>
+            { projectsInfo.map((project) => (
+              <ProjectCard key={project.name} project={project}/>
+            )) }
             <button className="absolute right-2 -bottom-9">
               <X size={25} weight="bold"/>
             </button>
