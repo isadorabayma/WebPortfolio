@@ -7,9 +7,10 @@ import { SectionInfo, initialSectionInfo, movedSectionInfo } from "./filesInfo";
 import { useState } from "react";
 import Desk from "./Images/concrete.png";
 import KeyBoard from "./Images/keyboard.png";
-import Tea from "./Images/tea5.png";
+import Plant from "./Images/tea5.png";
 import Pen from "./Images/pen4.png";
-
+import Tea from "./Images/tea7.png";
+import Pins from "./Images/pins2.png";
 
 import "./styles/global.css";
 
@@ -68,15 +69,29 @@ function App() {
       </div>
       <div className="absolute z-10 -rotate-[30deg] w-[15rem] -right-24 top-32">
         <img
-            src={Tea}
+            src={Plant}
             alt="vasinho com suculenta"
             className="object-contain"
           />
       </div>
-      <div className="absolute z-10 -rotate-[18deg] w-20 left-80 top-80">
+      <div className="absolute z-10 rotate-[90deg] w-[18rem] -right-12 bottom-44">
+        <img
+            src={Tea}
+            alt="xicara de chá"
+            className="invisible xx:visible object-contain"
+          />
+      </div>
+      <div className="absolute z-10 rotate-[90deg] w-[16rem] -right-8 bottom-44">
+        <img
+            src={Pins}
+            alt="porta trecos de curtiça com clipes"
+            className="invisible sm:visible object-contain"
+          />
+      </div>
+      <div className="absolute z-10 -rotate-[18deg] w-20 left-80 sm:left-96 top-80">
         <img
             src={Pen}
-            alt="teclado visto de cima"
+            alt="lápis preto"
             className="object-cover"
           />
       </div>
