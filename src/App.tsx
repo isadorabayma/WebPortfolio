@@ -21,7 +21,7 @@ function App() {
   const [tagClicked, setTagClicked] = useState<String | "">("")
 
   const handleSection = (sectionButton: String) => {
-    console.log("handleSection", sectionButton);
+    // console.log("handleSection", sectionButton);
     
     setTagClicked((prevTagClicked) => {
       if(prevTagClicked === sectionButton){
@@ -34,6 +34,8 @@ function App() {
     setSectionInfo((prevSectioInfo) => {
       return prevSectioInfo.map((section, index) => {
         const newSection = { ...section }
+        // console.log(section.name, sectionButton);
+        
 
         if(section.name !== sectionButton || section.name === tagClicked){
           newSection.z = initialSectionInfo[index].z;
@@ -58,6 +60,7 @@ function App() {
           src={Desk}
           alt="Textura de concreto"
           className="absolute -z-20 object-cover h-full w-full"
+          // onClick={() => handleSection("")}
         />
       <Header sectionInfo={sectionInfo} handleSection={handleSection} tagClicked={tagClicked}/>
       <div className="absolute -z-10 -rotate-[30deg] -left-64 w-[58rem] -top-80">

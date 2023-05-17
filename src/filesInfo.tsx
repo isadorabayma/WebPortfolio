@@ -60,7 +60,7 @@ export const initialSectionInfo: SectionInfo[] = [
       z: "z-1",
       rotate: "",
       margin: "",
-      right: "-left-16 sm:left-10 md:left-24 xl:left-40 ",
+      right: "",
     },
   ]
 
@@ -69,22 +69,22 @@ export const movedSectionInfo: SectionInfo[] = [
     name: "About",
     z: "z-30",
     rotate: "rotate-0",
-    margin: "mt-[1rem] lg:mt-[6rem] -right-[19rem] lg:right-[12rem]",
-    right: "top-[1rem] w-full max-w-[42rem] max-h-[60rem] right-0 lg:right-[14rem]",
+    margin: "mt-[1rem] lg:mt-[6rem] left-[42.5rem]",
+    right: "top-[1rem] w-full max-w-[42rem] max-h-[60rem] left-2",
   },
   {
     name: "Skills",
     z: "z-30",
     rotate: "rotate-0",
-    margin: "mt-[9rem] lg:mt-[14rem] -right-[19rem] lg:right-[12rem]",
-    right: "top-[1rem] w-full max-w-[42rem] max-h-[60rem] right-0 lg:right-[14rem]",
+    margin: "mt-[9rem] lg:mt-[14rem] left-[42.5rem]",
+    right: "top-[1rem] w-full max-w-[42rem] max-h-[60rem] left-2",
   },
   {
     name: "Experience",
     z: "z-30",
     rotate: "rotate-0",
-    margin: "mt-[17rem] lg:mt-[22rem] -right-[19rem] lg:right-[12rem]",
-    right: "top-[1rem] w-full max-w-[42rem] max-h-[60rem] right-0 lg:right-[14rem]",
+    margin: "mt-[17rem] lg:mt-[22rem] left-[42.5rem]",
+    right: "top-[1rem] w-full max-w-[42rem] max-h-[60rem] left-2",
   },
   {
     name: "Projects",
@@ -96,8 +96,8 @@ export const movedSectionInfo: SectionInfo[] = [
   {
     name: "Contact",
     z: "z-30",
-    rotate: "rotate-0",
-    margin: "xxxx",
-    right: "-left-[20rem] md:-left-[10rem]",
+    rotate: "",
+    margin: "",
+    right: "",
   },
 ]
