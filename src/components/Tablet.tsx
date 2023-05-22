@@ -16,11 +16,11 @@ export function Tablet({handleSection, sectionInfo}: FileProps) {
       </div>
       <div id="tablet" 
       onClick={() => handleSection(name, PROJECTS_INDEX)}
-      className={`absolute ${rotate} ${right} ${z} drop-shadow-xl 
+      className={`absolute ${rotate} ${right} drop-shadow-xl 
       bg-black rounded-[2rem] border-b-2 border-r-2 border-stone-600
       p-1 md:py-10 ring-1 ring-gray-900/5`}>
-        <div id="screan" className="bg-stone-200 
-        h-full w-full border-2 border-stone-800 rounded-[1.75rem] md:rounded-sm overflow-auto scrollbar-hide">
+        <div id="screan" className={`bg-stone-200 
+        h-full w-full border-2 border-stone-800 rounded-[1.75rem] md:rounded-sm  ${z} scrollbar-hide`}>
           <h1 className="text-3xl md:text-5xl text-stone-800 mt-3 ml-5 font-serif font-semibold">Projects</h1>
           <div id="content-tablet-section" className="relative border-y-2 border-stone-800 m-2 md:m-4 md:mb-10 md:py-3">
             { projectsInfo.map((project) => (
