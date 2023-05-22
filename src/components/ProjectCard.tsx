@@ -2,6 +2,7 @@ import { ProjectCardProps } from "../projectsInfo"
 
 export function ProjectCard({project}: ProjectCardProps) {
   const {image, name, alt, description, lenguages, libraries, demostration, repository} = project;
+  const demoIsDisable = project.demostration === "" ? "text-stone-500 cursor-not-allowed" : "";
 
   return (
     <div className="bg-white overflow-hidden rounded-2xl my-5 drop-shadow-xl">
@@ -27,7 +28,7 @@ export function ProjectCard({project}: ProjectCardProps) {
           ))}
         </div>
         <div className="flex flex-row justify-around p-1 py-4 font-bold border-t-2 border-stone-800">
-          <a href={demostration} aria-label="Demonstração">Demonstração</a>
+          <a className={demoIsDisable} href={demostration} aria-label="Demonstração">Demonstração</a>
           <a href={repository} aria-label="Repositório">Repositório</a>
         </div>
       </div>

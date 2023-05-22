@@ -9,7 +9,7 @@ import Desk from "./Images/concrete.png";
 
 import "./styles/global.css";
 import { CardContact } from "./components/CardContact";
-import { Click } from "./components/Click";
+// import { Click } from "./components/Click";
 import { Objects } from "./components/Objects";
 
 function App() {
@@ -66,7 +66,7 @@ function App() {
       <Card sectionInfo={sectionInfo} handleSection={handleSection}/>
       <CardContact sectionInfo={sectionInfo} handleSection={handleSection}/>
       <Objects/>
-      <Click/>
+      {/* <Click/> */}
     </div>
   );
 }

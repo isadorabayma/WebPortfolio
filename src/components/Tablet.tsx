@@ -19,7 +19,6 @@ export function Tablet({handleSection, sectionInfo}: FileProps) {
       className={`absolute ${rotate} ${right} ${z} drop-shadow-xl 
       bg-black rounded-[2rem] border-b-2 border-r-2 border-stone-600
       p-1 md:py-10 ring-1 ring-gray-900/5`}>
-        {/* <div className="invisible md:visible border-2 border-stone-800 rounded-full h-5 w-5 mx-auto my-3"></div> */}
         <div id="screan" className="bg-stone-200 
         h-full w-full border-2 border-stone-800 rounded-[1.75rem] md:rounded-sm overflow-auto scrollbar-hide">
           <h1 className="text-3xl md:text-5xl text-stone-800 mt-3 ml-5 font-serif font-semibold">Projects</h1>
@@ -37,9 +36,3 @@ export function Tablet({handleSection, sectionInfo}: FileProps) {
     </>
   );
 }
-
-// transition-all ease-in-out duration-300
-
-
-// rotate-0 right-[6rem]
-
