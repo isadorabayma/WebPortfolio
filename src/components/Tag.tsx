@@ -9,9 +9,6 @@ interface TagProps {
 }
 
 export function Tag({handleSection, margin, z, rotate, name, index}: TagProps) {
-  // const rightChange = right ? right : "right-0"
-  // hover:${!right && "w-[52px]"} hover:${!right && "right-8"} hover:${!right && "pl-8"
-
   return (
     <button 
       id="tag-sheet"

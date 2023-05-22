@@ -1,4 +1,5 @@
 import Portfolio from "./Images/Projects/portfolio.png"
+import TFC from "./Images/Projects/TFC-front-end.png"
 
 export interface ProjectType {
   image: string;
@@ -16,6 +17,16 @@ export interface ProjectCardProps {
 }
 
 export const projectsInfo: ProjectType[] = [
+  {
+  image: TFC,
+  name: "Trybe Futebol Clube",
+  alt: "Imagem do frontend do site do projeto Trybe Futebol Clube",
+  description: "O projeto simula uma aplicação responsável pela série A do fictício TFC - Trybe Futebol Clube. No projeto foi desenvolvido um backend e um Banco de Dados, para uma aplicação com o frontend já pronto, os dados foram modelados com MySQL através do Sequelize, e testados atravez da integração chai/sinon. A conecção com do banco com o front foi feita com uma orquestração de conteiners docker.",
+  lenguages: [ "Typescript", "MySQL", "Docker-Compose"],
+  libraries: [  "Sequelize", "React" ],
+  demostration: "",
+  repository: "https://github.com/isadorabayma/TrybeFutebolClube"
+  },
   {
   image: Portfolio,
   name: "Portfólio",
