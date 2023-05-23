@@ -13,7 +13,7 @@ export interface ProjectType {
 }
 
 export interface ProjectCardProps {
-  project: ProjectType
+  project: ProjectType;
 }
 
 export const projectsInfo: ProjectType[] = [

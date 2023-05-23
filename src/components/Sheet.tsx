@@ -1,4 +1,4 @@
-import { X } from "phosphor-react";
+import { X, CaretRight, CaretLeft } from "phosphor-react";
 import { About } from "./About";
 import { Experience } from "./Experience";
 import { Skills } from "./Skills";
@@ -6,14 +6,20 @@ import { SheetProps } from "../filesInfo";
 
 export function Sheet({name, z, rotate, right, handleSection, index}: SheetProps) {
   return (
-    <div id="sheet" onClick={() => handleSection(name, index)} className={`absolute ${z} ${rotate} ${right} drop-shadow-xl bg-stone-200 ring-1 ring-gray-900/10`}>
+    <div id="sheet" onClick={() => handleSection(name)} className={`absolute ${z} ${rotate} ${right} drop-shadow-xl bg-stone-200 ring-1 ring-gray-900/10`}>
       <div className="h-[53rem]">
-        <h1 id="title-sheet-section" className="text-5xl text-stone-800 mt-10 mx-10 font-serif font-semibold">{name}</h1>
+        <div className="flex flex-row justify-between mt-10 mx-10">
+          <h1 id="title-sheet-section" className="text-5xl text-stone-800 font-serif font-semibold">{name}</h1>
+          <div className="flex flex-row mt-3 mx-0 sm:mx-3 space-x-3">
+            {name !== "About" && <CaretLeft onClick={() => handleSection("Projects")} size={25} weight="bold"/>}
+            {name !== "Expirence" && <CaretRight onClick={() => handleSection("Projects")} size={25} weight="bold"/>}
+          </div>
+        </div>
         <div id="content-sheet-section" className="relative border-y-2 border-stone-800 mx-10">
           {"About" === name && <About/>}
           {"Skills" === name && <Skills/>}
           {"Experience" === name && <Experience/>}
-          <button onClick={() => handleSection(name, index)} className="absolute right-20 sm:right-1 bottom-2">
+          <button onClick={() => handleSection(name)} className="absolute right-20 sm:right-1 bottom-2">
             <X size={25} weight="bold"/>
           </button>
         </div>

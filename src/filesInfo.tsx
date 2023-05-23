@@ -1,16 +1,16 @@
 export interface FileProps {
-  handleSection: (sectionButton: String, indexClicked: number) => void;
+  handleSection: (sectionButton: String) => void;
   sectionInfo: SectionInfo[];
 }
 
 export interface HeaderProps {
-  handleSection: (sectionButton: String, indexClicked: number) => void;
+  handleSection: (sectionButton: String) => void;
   sectionInfo: SectionInfo[];
   tagClicked: String;
 }
 
 export interface SheetProps {
-  handleSection: (sectionButton: String, indexClicked: number) => void;
+  handleSection: (sectionButton: String) => void;
   name: String;
   z: string;
   rotate: String;

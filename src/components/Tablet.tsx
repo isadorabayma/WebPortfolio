@@ -15,7 +15,7 @@ export function Tablet({handleSection, sectionInfo}: FileProps) {
       <div id="shadow-tablet" className={`absolute z-[18] ${margin} ${rotate} bg-black/70 blur-lg`}>
       </div>
       <div id="tablet" 
-      onClick={() => handleSection(name, PROJECTS_INDEX)}
+      onClick={() => handleSection(name)}
       className={`absolute ${rotate} ${right} drop-shadow-xl 
       bg-black rounded-[2rem] border-b-2 border-r-2 border-stone-600
       p-1 md:py-10 ring-1 ring-gray-900/5`}>
