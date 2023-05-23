@@ -31,7 +31,6 @@ export function Tablet({handleSection, sectionInfo}: FileProps) {
             </button>
           </div>
         </div>
-        <div className="ring-1 ring-gray-900/10 bg-red-500 w-10"></div>
       </div>
     </>
   );

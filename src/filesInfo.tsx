@@ -90,8 +90,8 @@ export const movedSectionInfo: SectionInfo[] = [
     name: "Projects",
     z: "overflow-auto",
     rotate: "rotate-0 h-[45rem] w-[21rem] md:h-[49rem] md:w-[30rem]",
-    margin: "mt-8 lg:mt-12 left-10 lg:left-auto lg:right-1",
-    right: "mt-2 lg:mt-6 left-3 lg:left-auto lg:right-5 z-30",
+    margin: "mt-[16rem] lg:mt-12 left-10 lg:left-auto lg:right-1",
+    right: "mt-[15rem] lg:mt-6 left-3 lg:left-auto lg:right-5 z-30",
   },
   {
     name: "Contact",

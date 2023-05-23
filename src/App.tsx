@@ -32,7 +32,7 @@ function App() {
     setSectionInfo((prevSectioInfo) => {
       return prevSectioInfo.map((section, index) => {
         const newSection = { ...section }
-        // console.log(section.name, sectionButton);
+        console.log(section.name, sectionButton);
         
 
         if(section.name !== sectionButton || section.name === tagClicked){
