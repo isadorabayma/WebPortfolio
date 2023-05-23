@@ -12,7 +12,7 @@ export function Tablet({handleSection, sectionInfo}: FileProps) {
 
   return (
     <>
-      <div id="shadow-tablet" className={`absolute z-[18] ${margin} ${rotate} bg-black/70 blur-lg`}>
+      <div id="shadow-tablet" className={`absolute z-[28] ${margin} ${rotate} bg-black/70 blur-lg`}>
       </div>
       <div id="tablet" 
       onClick={() => handleSection(name)}

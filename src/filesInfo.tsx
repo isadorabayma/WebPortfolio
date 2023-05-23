@@ -52,7 +52,7 @@ export const initialSectionInfo: SectionInfo[] = [
       name: "Projects",
       z: "overflow-hidden",
       rotate: "-rotate-[10deg] md:-rotate-[20deg] lg:-rotate-[10deg] h-[34rem] w-[16rem] md:h-[49rem] md:w-[30rem]",
-      margin: "mt-[34rem] md:mt-[18rem] lg:mt-[22rem] left-[2rem] md:left-auto md:-right-[13rem] lg:right-[2rem]",
+      margin: "mt-[34rem] md:mt-[18rem] lg:mt-[22rem] left-[2rem] md:left-auto md:-right-[13rem] lg:right-[2rem] z-[19]",
       right: "mt-[30rem] md:mt-[18rem] lg:mt-[20rem] left-[1rem] md:left-auto md:-right-[12rem] lg:right-[3rem] z-20",
     },
     {
@@ -90,8 +90,8 @@ export const movedSectionInfo: SectionInfo[] = [
     name: "Projects",
     z: "overflow-auto",
     rotate: "rotate-0 h-[45rem] w-[21rem] md:h-[49rem] md:w-[30rem]",
-    margin: "mt-[16rem] lg:mt-12 left-10 lg:left-auto lg:right-1",
-    right: "mt-[15rem] lg:mt-6 left-3 lg:left-auto lg:right-5 z-30",
+    margin: "mt-[11rem] sm:mt-12 left-10 lg:left-auto lg:right-1 z-[29]",
+    right: "mt-[10rem] sm:mt-6 left-3 lg:left-auto lg:right-5 z-30",
   },
   {
     name: "Contact",
