@@ -1,5 +1,5 @@
 interface TagProps {
-  handleSection: (sectionButton: String, indexClicked: number) => void;
+  handleSection: (sectionButton: String) => void;
   name: String;
   z: string;
   rotate: String;
@@ -12,7 +12,7 @@ export function Tag({handleSection, margin, z, rotate, name, index}: TagProps) {
   return (
     <button 
       id="tag-sheet"
-      onClick={() => handleSection(name, index)}
+      onClick={() => handleSection(name)}
       className={`absolute bg-stone-200 h-24 sm:h-32 w-8 sm:w-10 ${margin} rounded-r-md ${z} ${rotate} border-[1px] border-l-0 border-gray-400/60 p-3}`}
     >
       <div

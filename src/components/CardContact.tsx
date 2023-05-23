@@ -1,16 +1,13 @@
 import "../styles/global.css";
 import { EnvelopeOpen, MapPin, Phone } from "phosphor-react";
 import { FileProps } from "../filesInfo";
-import { AiFillGithub } from "react-icons/ai";
-
-// 7 > 18
 
 export function CardContact({handleSection, sectionInfo}: FileProps) {
   const CARD_INDEX = 4;
   const card = sectionInfo[CARD_INDEX];
   const {name, right, z} = card
   return (
-    <div onClick={() => handleSection(name, CARD_INDEX)} className={ right }>
+    <div onClick={() => handleSection(name)} className={ right }>
       <div id="shadow-card" className="absolute z-[8] h-[10rem] w-[17.6rem] rounded-md top-[18.5rem] right-7 md:right-40 lg:right-[34rem] md:top-[16rem] bg-black/50 blur-lg">
       </div>
       <div className="flex"> 

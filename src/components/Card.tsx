@@ -8,7 +8,7 @@ export function Card({handleSection, sectionInfo}: FileProps) {
   const card = sectionInfo[CARD_INDEX];
   const {name, z} = card
   return (
-    <div onClick={() => handleSection(name, CARD_INDEX)}>
+    <div onClick={() => handleSection(name)}>
       <div id="shadow-card" className="absolute z-[8] h-[10rem] w-[17.6rem] rounded-md top-[7.5rem] right-7 md:right-40 lg:right-[34rem] md:top-20 bg-black/50 blur-lg">
       </div>
       <div className="flex"> 
