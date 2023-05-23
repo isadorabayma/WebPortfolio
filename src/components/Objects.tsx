@@ -22,11 +22,11 @@ export function Objects() {
       </div>
       <div id="shadow-plant" className="absolute z-[8] w-[15rem] h-[15rem] rounded-full -right-28 md:right-2 lg:right-[23rem] top-36 md:top-24 bg-black/50 blur-lg">
       </div>
-      <div className="absolute z-10 rotate-[90deg] w-[15rem] -right-8 bottom-44 lg:right-32 lg:bottom-auto lg:top-20">
+      <div className="absolute z-10 rotate-[90deg] w-[15rem] -right-8 bottom-44 lg:right-32 lg:bottom-auto lg:top-20 invisible sm:visible">
         <img
             src={Pins}
             alt="porta trecos de curtiça com clipes"
-            className="invisible sm:visible object-contain"
+            className="object-contain"
           />
       </div>
       <div id="shadow-pins" className="invisible sm:visible absolute z-[8] w-[15rem] h-[15rem] rounded-full -right-12 bottom-40 lg:right-28 lg:bottom-auto lg:top-24 bg-black/50 blur-lg">
