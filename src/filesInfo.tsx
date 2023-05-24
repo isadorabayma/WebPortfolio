@@ -53,7 +53,7 @@ export const initialSectionInfo: SectionInfo[] = [
       z: "overflow-hidden",
       rotate: "-rotate-[10deg] md:-rotate-[20deg] lg:-rotate-[10deg] h-[34rem] w-[16rem] md:h-[49rem] md:w-[30rem]",
       margin: "mt-[34rem] md:mt-[18rem] lg:mt-[22rem] left-[2rem] md:left-auto md:-right-[13rem] lg:right-[2rem] z-[19]",
-      right: "mt-[30rem] md:mt-[18rem] lg:mt-[20rem] left-[1rem] md:left-auto md:-right-[12rem] lg:right-[3rem] z-20",
+      right: "mt-[30rem] md:mt-[18rem] lg:mt-[20rem] left-[1rem] md:left-auto md:-right-[12rem] lg:right-[3rem] z-20 text-xs md:text-base",
     },
     {
       name: "Contact",      

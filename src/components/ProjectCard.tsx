@@ -6,9 +6,9 @@ export function ProjectCard({project}: ProjectCardProps) {
 
   return (
     <div className="bg-white overflow-hidden rounded-2xl my-5 drop-shadow-xl">
-      <img src={ image } alt={ alt } />
+      <img className="ring-1 ring-stone-500/40 h-64 md:h-80 object-cover" src={ image } alt={ alt } />
       <div className="px-3 md:px-7">
-        <h2 className="mt-6 mb-2 font-bold text-xl">{ name }</h2>
+        <h2 className="mt-6 mb-2 font-bold text-lg md:text-xl">{ name }</h2>
         <p className="text-justify">{ description } </p>
         <div className="flex flex-wrap justify-center mt-5 space-x-5 font-bold">
           { lenguages.map((lenguage, index) => (
