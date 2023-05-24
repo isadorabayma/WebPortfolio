@@ -1,45 +1,31 @@
 import { ExperienceType } from "../expereceInfo";
 
 interface ExpSectionProps {
-  direction: string;
   data: ExperienceType[]
 }
 
-export function ExpSection({ direction, data }: ExpSectionProps) {
-  const directionFull = direction === "l" ? "text-left" : "text-right";
-  const directionBar = direction === "r" ? "flex-row" : "flex-row-reverse";
-    
+export function ExpSection({ data }: ExpSectionProps) {
+
   return(
-    <div className={`border-stone-800 border-${direction}-2 w-1/2 h-[43rem] relative justify-end px-2`}>
-      <div id="time-bar" className="">
-      { data.map((exp) => {
-        const duration = `h-[${exp.duration}rem]`;
-        const top = `top-[${exp.endYear - 2010}rem]`;
+    <div className="h-full">
+      <div id="time-bar" className="h-full flex flex-col">
+      { data.map((exp, i) => {
+        const directionFull = exp.category !== "Experiencia Proficional" ? "text-left" : "text-right";
+        const directionBar = exp.category === "Experiencia Proficional" ? "flex-row" : "flex-row-reverse";
+        const margin = i <= 4 && "-mb-14"
 
         return(
-          <div key={exp.name} className={`absolute ${top} flex ${directionBar}`}>
-            <div id="exp-info">
+          <div key={exp.name} className={`flex ${directionBar} ${margin} justify-center relative`}>
+            <div id="exp-info" className="w-1/2 py-4" >
               <div className={directionFull}>{exp.name}</div>
               <div className={directionFull}>{exp.place}</div>
               <div className={directionFull}>{`${exp.startYear} - ${exp.endYear}`}</div>
             </div>
-            <div id="duration-time-line" className={`w-[1rem] mx-0 border border-stone-900 ${duration}`}></div>
+            <div id="duration-time-line" className="top-3 w-4 h-4 mt-6 mx-2 bg-teal-900 rounded-full"></div>
+            <div className="w-1/2"></div>
           </div>
         )})}
       </div>      
     </div>
   );
 }
-
-// {
-//   data.map((exp, i) =>
-//       <div key={i} className={`flex ${directionBar}`}>
-//       <div key={i}>
-//         <div className={`w-56 sm:w-60`}>
-//           <div className={directionFull}>{exp.name}</div>
-//           <div className={directionFull}>{exp.place}</div>
-//           <div className={directionFull}>{`${exp.startYear} - ${exp.endYear}`}</div>
-//         </div>
-//       </div>      
-//   )
-//   }

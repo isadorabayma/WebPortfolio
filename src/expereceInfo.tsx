@@ -12,16 +12,25 @@ const years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020,
 
 const experiences: ExperienceType[] = [
   {
-    name: "Graduação",
+    name: "Graduação Arquitetura",
     place: "PUC-Rio",
-    startYear: 2010,
+    startYear: 2014,
     endYear: 2017,
     description: "Arquitetura e Urbanismo",
     category: "Formação",
     duration: 7,
   },
   {
-    name: "Intercâmbio",
+    name: "Graduação Arquitetura",
+    place: "PUC-Rio",
+    startYear: 2010,
+    endYear: 2013,
+    description: "Arquitetura e Urbanismo",
+    category: "Formação",
+    duration: 7,
+  },
+  {
+    name: "Intercâmbio Arquitetura",
     place: "Inglaterra",
     startYear: 2013,
     endYear: 2014,
@@ -31,7 +40,7 @@ const experiences: ExperienceType[] = [
 
   },
   {
-    name: "Programa de Iniciação Cientifica e Mestrado",
+    name: "Iniciação Cientifica e Mestrado",
     place: "IMPA",
     startYear: 2010,
     endYear: 2011,
@@ -41,16 +50,16 @@ const experiences: ExperienceType[] = [
 
   },
   {
-    name: "Tecnico",
+    name: "Desenvolvimento Web Fullstack",
     place: "Trybe",
     startYear: 2021,
     endYear: 2022,
-    description: "Desenvolvimento Web Full Stack",
+    description: "",
     category: "Formação",
     duration: 1,
   },
   {
-    name: "Desevolvedora web",
+    name: "Desevolvedora web FullStack",
     place: "VILA Estúdio",
     startYear: 2022,
     endYear: 2023,
