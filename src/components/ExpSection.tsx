@@ -12,11 +12,11 @@ export function ExpSection({ data }: ExpSectionProps) {
       { data.map((exp, i) => {
         const directionFull = exp.category !== "Experiencia Proficional" ? "text-left" : "text-right";
         const directionBar = exp.category === "Experiencia Proficional" ? "flex-row" : "flex-row-reverse";
-        const margin = i <= 4 && "-my-5"
+        const margin = i <= 4 && "-my-5 sm:-my-4"
 
         return(
           <div key={exp.name} className={`flex ${directionBar} ${margin} justify-center relative`}>
-            <div id="exp-info" className="w-1/2 py-2" >
+            <div id="exp-info" className="w-1/2 py-2 sm:py-4" >
               <div className={directionFull}>{exp.name}</div>
               <div className={directionFull}>{exp.place}</div>
               <div className={directionFull}>{`${exp.startYear} - ${exp.endYear}`}</div>

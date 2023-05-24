@@ -8,7 +8,7 @@ interface SkillsSectionProps {
 export function SkillsSection({ skills, title }: SkillsSectionProps) {
   return (
     <div className="pt-8">
-      <h2 className="text-2xl sm:text-3xl font-serif font-semibold pl-4 border-b-2 border-stone-300 sm:border-b-0 ">
+      <h2 className="text-2xl sm:text-3xl font-serif font-semibold mt-4 pl-4 border-b-2 border-stone-300 sm:border-b-0 ">
         {title}
       </h2>
       <div className="flex flex-wrap space-x-2 sm:border-l-2 sm:border-stone-800 sm:ml-5 sm:px-3 sm:pl-4">

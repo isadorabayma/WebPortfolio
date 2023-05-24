@@ -13,7 +13,7 @@ export function Sheet({name, z, rotate, right, handleSection, index}: SheetProps
       <div className="h-[53rem]">
         <div className="flex flex-row justify-between mt-10 mx-10">
           <h1 id="title-sheet-section" className="text-4xl text-stone-800 font-serif font-semibold">{name}</h1>
-          <div className="flex flex-row mt-3 mx-0 sm:mx-3 space-x-3">
+          <div className="flex flex-row mt-1 mx-0 sm:mx-3 space-x-3">
             {name === sectionNames[0] &&
             <button onClick={() => handleSection(name)}>
               <X size={25} weight="bold"/>
