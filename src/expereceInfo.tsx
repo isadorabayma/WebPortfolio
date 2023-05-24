@@ -1,11 +1,11 @@
 export type ExperienceType = {
   name: String;
   place: String;
-  startYear: Number;
-  endYear: Number;
+  startYear: number;
+  endYear: number;
   description: String;
   category: String;
-  duration: Number,
+  duration: number,
 }
 
 const experiences: ExperienceType[] = [
