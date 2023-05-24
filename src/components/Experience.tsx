@@ -7,7 +7,7 @@ export function Experience() {
   const work = experiences.filter((each) => ( each.category === "Experiencia Proficional")).sort((a, b) => Number(b.endYear) - Number(a.endYear));
 
   return(
-    <div className="flex flex-row p-5">
+    <div className="flex flex-row pt-5">
       <ExpSection direction={"r"} data={study}/>
       <ExpSection direction={"l"} data={work}/>
     </div>

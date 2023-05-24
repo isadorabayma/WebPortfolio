@@ -1,12 +1,14 @@
 export type ExperienceType = {
-  name: String;
-  place: String;
+  name: string;
+  place: string;
   startYear: number;
   endYear: number;
-  description: String;
-  category: String;
+  description: string;
+  category: string;
   duration: number,
 }
+
+const years = [2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]
 
 const experiences: ExperienceType[] = [
   {
