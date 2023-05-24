@@ -14,7 +14,7 @@ export function About() {
       </div>
       <div className="flex items-end">
         <span className="pb-10 text-base sm:text-lg w-full text-justify font-sans">
-        Isadora é arquiteta de formação (PUC-Rio, 2017) e migrou para a área de desenvolvimento web (Trybe, 2022), trazendo consigo habilidades em gerenciamento de projetos, resolução de problemas e atenção aos detalhes. Com competências em lógica e matemática desde cedo, foi contemplada com uma bolsa de iniciação científica e mestrado (IMPA, 2011) e está ansiosa por trabalhar em novos desafios e projetos, oferecendo soluções eficientes para as necessidades de seus clientes. Sua paixão por inovação e excelência a tornam uma profissional valiosa na área de desenvolvimento web.
+        Isadora é arquiteta de formação (PUC-Rio, Kingston University-UK, 2017) e migrou para a área de desenvolvimento web (Trybe, 2022), trazendo consigo habilidades em gerenciamento de projetos, resolução de problemas, atenção ao cliente e especial apreço aos detalhes. Por suas destacadas competências em lógica e matemática, foi contemplada com uma bolsa de iniciação científica e mestrado (Instituto de Matemática Pura e Aplicada - IMPA, 2011) e está pronta para enfrentar novos desafios e projetos, oferecendo soluções eficientes para as necessidades de seus clientes. Sua paixão por inovação e excelência a tornam uma profissional valiosa na área de desenvolvimento web.
         </span>
       </div>
     </div>
